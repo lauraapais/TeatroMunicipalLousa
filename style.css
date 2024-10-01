@@ -1,0 +1,95 @@
+:root {
+    --white: #FFFFFF;
+    --grey: #707070;
+    --black: #000;
+
+    --headerHeight: 10vh;
+    --marginDesktop: 2vw;
+}
+
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer p {
+    color: var(--grey);
+}
+
+/*Index*/
+#indexGeneral {
+    height: calc(var(--vh, 1h)*100);
+
+}
+
+#indexGeneral span {
+    color: var(--grey);
+}
+
+header {
+    width: 100vw;
+    height: var(--headerHeight);
+    padding: var(--marginDesktop);
+}
+
+.logoHeader {
+    height: var(--headerHeight);
+}
+
+.logoHeader svg {
+    width: 4%;
+}
+
+#bodyIndex{
+    overflow-x: hidden;
+}
+#mainIndex {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#mainIndexContent svg {
+    width: 70%;
+    
+}
+
+#logoMainIndex_1, #logoMainIndex_2{
+width:100vw;
+}
+
+#logoMainIndex_1{
+    display: flex;
+    align-items: center;
+}
+
+#logoMainIndex_1 span{
+    font-size: calc(17px + 1em);
+    line-height: calc(17px + 1em);
+}
+
+#logoMainIndex_2 svg{ 
+    position: absolute;
+    left: 50%;
+    top:65%
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: calc(var(--marginDesktop)*2);
+    padding: var(--marginDesktop);
+}
