@@ -82,7 +82,7 @@ width:100vw;
 #logoMainIndex_2 svg{ 
     position: absolute;
     left: 50%;
-    top:65%
+    bottom:0;
 }
 
 #imagesIndex{
