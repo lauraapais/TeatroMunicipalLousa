@@ -83,23 +83,39 @@ width:100vw;
     position: absolute;
     left: 50%;
     bottom:0;
+    z-index: -2;
 }
 
 #imagesIndex{
     position: absolute;
     top:0;
     z-index: -1;
+    width:100vw;
+height: 100vh;
 }
 
+.imageIndex{
+    position: absolute;
+    
+}
 
 .imageIndexVertical{
-    width:15vw;
+    width:calc(150px + 5vw);
 }
 
 .imageIndexHorizontal{
-    height:15vw;
+    height:13vw;
 }
 
+#imageIndex4{
+    left:40%;
+    bottom: 5%;
+}
+
+#imageIndex11{
+    left:5%;
+    bottom: 20%;
+}
 
 
 footer {
