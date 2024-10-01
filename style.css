@@ -79,11 +79,16 @@ width:100vw;
     line-height: calc(2px + 1.5vw);
 }
 
+#logoMainIndex_1 svg{ 
+    max-height: 60vh;
+}
+
 #logoMainIndex_2 svg{ 
     position: absolute;
     left: 50%;
-    bottom:0;
+    bottom:-22%;
     z-index: -2;
+    max-height: 60vh;
 }
 
 #imagesIndex{
@@ -96,7 +101,7 @@ height: 100vh;
 
 .imageIndex{
     position: absolute;
-    
+    display: none;
 }
 
 .imageIndexVertical{
@@ -104,8 +109,18 @@ height: 100vh;
 }
 
 .imageIndexHorizontal{
-    height:13vw;
+    height: calc(120px + 5vw);
 }
+
+#imageIndex1{
+    right:5%;
+    top: 3%;
+} 
+
+#imageIndex2{
+    right:15%;
+    top: 45%;
+} 
 
 #imageIndex4{
     left:40%;
