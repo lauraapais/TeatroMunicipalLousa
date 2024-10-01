@@ -85,6 +85,22 @@ width:100vw;
     top:65%
 }
 
+#imagesIndex{
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+
+
+.imageIndexVertical{
+    width:15vw;
+}
+
+.imageIndexHorizontal{
+    height:15vw;
+}
+
+
 
 footer {
     position: absolute;
