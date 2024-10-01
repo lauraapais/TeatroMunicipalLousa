@@ -75,8 +75,8 @@ width:100vw;
 }
 
 #logoMainIndex_1 span{
-    font-size: calc(17px + 1em);
-    line-height: calc(17px + 1em);
+    font-size: calc(2px + 1.5vw);
+    line-height: calc(2px + 1.5vw);
 }
 
 #logoMainIndex_2 svg{ 
