@@ -155,42 +155,42 @@ header {
 }
 
 #imageIndex5 {
-    left: 40%;
+    left: -40%;
     bottom: 10%;
 }
 
 #imageIndex6 {
-    left: 30%;
+    left:  -30%;
     top: 20%;
 }
 
 #imageIndex7 {
-    left: 60%;
+    left: -60%;
     top: 15%;
 }
 
 #imageIndex8 {
-    left: 80%;
+    left: -80%;
     bottom: 15%;
 }
 
 #imageIndex9 {
-    right: 75%;
+    right: -75%;
     top: 5%;
 }
 
 #imageIndex10{
-    right: 60%;
+    right: -60%;
     top: 55%;
 }
 
 #imageIndex11{
-    right: 40%;
+    right: -40%;
     top: 10%;
 }
 
 #imageIndex12{
-    right: 30%;
+    right: -30%;
     bottom: 10%;
 }
 
@@ -205,7 +205,7 @@ footer {
 
 .moveRight, .moveLeft {
     position: absolute;
-    /* opacity: 0;*/
+opacity: 0;
     transition: opacity 2s ease-in-out;
 }
 
