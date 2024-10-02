@@ -92,13 +92,13 @@ header {
     #logoMainIndex_2 svg {
         /*min-height: 50vh;
         max-height: 60vh;*/
-        height: 50vh;
+        height: 55vh;
     }
 
     #logoMainIndex_2 {
         position: absolute;
         right: -5%;
-        bottom: -5%;
+        bottom: -21%;
     }
 }
 
