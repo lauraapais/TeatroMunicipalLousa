@@ -50,7 +50,6 @@ span {
 }
 
 header {
-    width: 100vw;
     height: var(--headerHeight);
     padding: var(--marginDesktop);
 }
@@ -202,7 +201,6 @@ header {
 }
 
 footer {
-    width:100vw;
     position: absolute;
     bottom: 0;
     display: flex;
