@@ -24,6 +24,10 @@ footer p {
     color: var(--grey);
 }
 
+p{
+    font-size: calc(9px + 0.390625vw);
+    line-height: calc(13px + 0.390625vw);
+}
 /*Index*/
 #indexGeneral {
     height: calc(var(--vh, 1h)*100);
@@ -102,7 +106,6 @@ height: 100vh;
 
 .imageIndex{
     position: absolute;
-    display: none;
 }
 
 .imageIndexVertical{
@@ -123,15 +126,57 @@ height: 100vh;
     top: 45%;
 } 
 
+#imageIndex3{
+    left: 15%;
+    top: 10%;
+} 
+
+
 #imageIndex4{
     left:40%;
     bottom: 5%;
 }
 
+#imageIndex5{
+    left: 30%;
+    bottom: 25%;
+}
+
+#imageIndex6{
+    right: 5%;
+    bottom: 5%;
+}
+
+#imageIndex7{
+    left: 3%;
+    top: 25%;
+}
+
+#imageIndex8{
+    left: 50%;
+    top: 10%;
+}
+
+#imageIndex9{
+    right: calc(100% + 40%);
+    top: 30%;
+}
+
+#imageIndex10{
+    right: calc(100% + 10%);
+    top: 20%;
+}
+
 #imageIndex11{
-    left:5%;
+    left: 5%;
     bottom: 20%;
 }
+
+#imageIndex12{
+    left: calc(100% - 0%);
+    bottom: 20%;
+}
+
 
 
 footer {
@@ -139,5 +184,5 @@ footer {
     bottom: 0;
     display: flex;
     gap: calc(var(--marginDesktop)*2);
-    padding: var(--marginDesktop);
+    padding: calc(var(--marginDesktop)/2) var(--marginDesktop) 
 }
