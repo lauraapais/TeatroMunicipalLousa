@@ -14,12 +14,12 @@ window.onload = function() {
         moveRightElements.forEach(el => {
             const currentPos = parseFloat(getComputedStyle(el).left);
             if (directionRight) {
-                el.style.left = (currentPos + 1) + 'px';
+                el.style.left = (currentPos + 0.5) + 'px';
                 if (currentPos > window.innerWidth) {
                     directionRight = false; 
                 }
             } else {
-                el.style.left = (currentPos - 1) + 'px';
+                el.style.left = (currentPos - 0.5) + 'px';
                 if (currentPos < -el.offsetWidth) {
                     directionRight = true; 
                 }
@@ -29,12 +29,12 @@ window.onload = function() {
         moveLeftElements.forEach(el => {
             const currentPos = parseFloat(getComputedStyle(el).right);
             if (directionLeft) {
-                el.style.right = (currentPos + 1) + 'px';
+                el.style.right = (currentPos + 0.5) + 'px';
                 if (currentPos > window.innerWidth) {
                     directionLeft = false; 
                 }
             } else {
-                el.style.right = (currentPos - 1) + 'px';
+                el.style.right = (currentPos - 0.5) + 'px';
                 if (currentPos < -el.offsetWidth) {
                     directionLeft = true; 
                 }
