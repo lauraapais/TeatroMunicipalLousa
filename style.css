@@ -210,10 +210,6 @@ footer {
 
 
 @media (max-width: 1300px){
-    body{
-        background-color:aqua;
-    }
-
     span{
         font-size: calc(15px + 1.5vw);
     }
@@ -234,8 +230,7 @@ footer {
         position: absolute;
         right: -10%;
         bottom: 12%;
-    }
-
+    
 
     .logoInfo {
         display: block;
@@ -249,9 +244,6 @@ footer {
 }
 
 @media (orientation: portrait), (max-width: 900px) {
-    body{
-        background-color:red;
-    }
     span{
         font-size: calc(15px + 1.5vw);
     }
