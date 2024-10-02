@@ -2,8 +2,8 @@ window.onload = function() {
     const moveRightElements = document.querySelectorAll('.moveRight');
     const moveLeftElements = document.querySelectorAll('.moveLeft');
 
-    let directionRight = true;
-    let directionLeft = true;
+    let directionsRight = Array.from(moveRightElements).map(() => true);
+    let directionsLeft = Array.from(moveLeftElements).map(() => true);
 
     setTimeout(() => {
         moveRightElements.forEach(el => el.style.opacity = '1');
@@ -11,32 +11,32 @@ window.onload = function() {
     }, 500);
 
     function animate() {
-        moveRightElements.forEach(el => {
+        moveRightElements.forEach((el, index) => {
             const currentPos = parseFloat(getComputedStyle(el).left);
-            if (directionRight) {
+            if (directionsRight[index]) {
                 el.style.left = (currentPos + 0.5) + 'px';
                 if (currentPos > window.innerWidth) {
-                    directionRight = false; 
+                    directionsRight[index] = false; 
                 }
             } else {
                 el.style.left = (currentPos - 0.5) + 'px';
                 if (currentPos < -el.offsetWidth) {
-                    directionRight = true; 
+                    directionsRight[index] = true; 
                 }
             }
         });
 
-        moveLeftElements.forEach(el => {
+        moveLeftElements.forEach((el, index) => {
             const currentPos = parseFloat(getComputedStyle(el).right);
-            if (directionLeft) {
+            if (directionsLeft[index]) {
                 el.style.right = (currentPos + 0.5) + 'px';
                 if (currentPos > window.innerWidth) {
-                    directionLeft = false; 
+                    directionsLeft[index] = false; 
                 }
             } else {
                 el.style.right = (currentPos - 0.5) + 'px';
                 if (currentPos < -el.offsetWidth) {
-                    directionLeft = true; 
+                    directionsLeft[index] = true; 
                 }
             }
         });
