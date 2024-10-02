@@ -251,15 +251,15 @@ footer {
 
 #cursor {
     position: fixed;
-    background-color: #D7D6D4;
+    background-color: var(--black);
+
     width: 2em;
     height: 2em;
     border-radius: 100%;
-    mix-blend-mode: difference;
     pointer-events: none;
     transition: width .2s ease-in-out, height .2s ease-in-out;
     transform: translate(-50%, -50%);
-    z-index: 300;
+    z-index: -1;
 }
 
 #cursor.active {
