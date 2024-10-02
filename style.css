@@ -208,20 +208,50 @@ footer {
     padding: calc(var(--marginDesktop)/2) var(--marginDesktop)
 }
 
-@media (orientation: portrait){
-#indexGeneral span{
-    padding: var(--marginMobile);
-}
-}
 
-@media (max-width: 1800px){
-    #indexGeneral span{
+@media (max-width: 1300px){
+    body{
+        background-color:aqua;
+    }
+
+    span{
+        font-size: calc(15px + 1.5vw);
+    }
+    header {
         padding: var(--marginDesktop);
     }
+
+    .agendaIndex{
+        width: auto;
     }
 
-@media (orientation: portrait), (max-width: 1800px) {
+    #logoMainIndex_1 svg,
+    #logoMainIndex_2 svg {
+        height: 43vh;
+    }
 
+    #logoMainIndex_2 {
+        position: absolute;
+        right: -10%;
+        bottom: 12%;
+    }
+
+
+    .logoInfo {
+        display: block;
+    }
+    
+
+    footer{
+        padding: var(--marginDesktop);
+    }
+    
+}
+
+@media (orientation: portrait), (max-width: 900px) {
+    body{
+        background-color:red;
+    }
     span{
         font-size: calc(15px + 1.5vw);
     }
@@ -251,7 +281,9 @@ footer {
         display: block;
     }
     
-
+    #indexGeneral span{
+        padding: var(--marginMobile);
+    }
 
     footer{
         padding: var(--marginMobile);
