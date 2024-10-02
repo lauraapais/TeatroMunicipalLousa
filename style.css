@@ -64,9 +64,10 @@ header {
     overflow-x: hidden;
 }
 
-#mainIndexContent svg {
-    width: 65%;
-    
+#logoMainIndex_1  svg, #logoMainIndex_2 svg {
+    width: 75%;
+    min-height: 50vh;
+    max-height: 60vh;
 }
 
 #logoMainIndex_1, #logoMainIndex_2{
@@ -83,17 +84,15 @@ width:100vw;
     line-height: calc(2px + 1.5vw);
 }
 
-#logoMainIndex_1 svg{ 
-    min-height: 50vh;
-    max-height: 60vh;
-}
 
 #logoMainIndex_2 svg{ 
     position: absolute;
     left: 50%;
     z-index: -2;
-    min-height: 50vh;
-    max-height: 60vh;
+}
+
+.agendaIndex{
+    width:25%;
 }
 
 #imagesIndex{
