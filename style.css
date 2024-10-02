@@ -286,7 +286,7 @@ footer {
     }
 
     footer{
-        padding: var(--marginMobile);
+        padding: var(--marginDesktop);
     }
 }
 
