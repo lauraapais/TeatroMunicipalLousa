@@ -5,8 +5,15 @@ window.onload = function() {
     let directionsRight = Array.from(moveRightElements).map(() => true);
     let directionsLeft = Array.from(moveLeftElements).map(() => true);
 
-    // Adiciona a margem de 10% além da largura da janela
-    const margin = window.innerWidth * 0.4;
+    // Verifica se está em modo retrato (portrait) para dispositivos móveis
+    const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+    const isMobile = window.innerWidth <= 768; // Define a largura máxima para mobile
+
+    // Define a margem base e dobra se for mobile e portrait
+    let margin = window.innerWidth * 0.4;
+    if (isMobile && isPortrait) {
+        margin *= 2; // Dobra a margem para dispositivos móveis em modo retrato
+    }
 
     setTimeout(() => {
         moveRightElements.forEach(el => el.style.opacity = '1');
