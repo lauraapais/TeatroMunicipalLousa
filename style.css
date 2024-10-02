@@ -150,7 +150,7 @@ header {
 
 
 #imageIndex4 {
-    left: 40%;
+    right: 30%;
     bottom: 5%;
 }
 
@@ -207,7 +207,21 @@ footer {
     padding: calc(var(--marginDesktop)/2) var(--marginDesktop)
 }
 
+.moveRight, .moveLeft {
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
 
+/* Para mover os elementos à direita e à esquerda */
+.moveRight {
+    left: 0; /* Inicia da esquerda */
+}
+
+.moveLeft {
+    right: 0; /* Inicia da direita */
+}
 
 
 @media (orientation: portrait), (max-width: 1200px) {
