@@ -102,6 +102,7 @@ width:100vw;
     z-index: -1;
     width:100vw;
 height: 100vh;
+display: none;
 }
 
 .imageIndex{
