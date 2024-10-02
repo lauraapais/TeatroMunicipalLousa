@@ -102,6 +102,7 @@ header {
         position: absolute;
         right: -5%;
         bottom: -21%;
+        z-index: -1;
     }
 }
 
@@ -134,70 +135,65 @@ header {
 }
 
 #imageIndex1 {
-    right: 5%;
-    top: 3%;
-}
-
-#imageIndex2 {
-    right: 15%;
+    left: 7%;
     top: 45%;
 }
 
-#imageIndex3 {
-    left: 15%;
-    top: 10%;
+#imageIndex2 {
+    left: 45%;
+    bottom: 10%;
 }
 
+#imageIndex3 {
+    right: 20%;
+    top: 50%;
+}
 
 #imageIndex4 {
-    right: 30%;
-    bottom: 5%;
+    right: 10%;
+    top: 5%;
 }
 
 #imageIndex5 {
-    left: 30%;
-    bottom: 25%;
+    left: 40%;
+    bottom: 10%;
 }
 
 #imageIndex6 {
-    right: 5%;
-    bottom: 5%;
-}
-
-#imageIndex7 {
-    left: 3%;
-    top: 25%;
-}
-
-#imageIndex8 {
-    left: 50%;
-    top: 10%;
-}
-
-#imageIndex9 {
-    right:  40%;
-    top: 30%;
-}
-
-#imageIndex10 {
-    right: 10%;
+    left: 30%;
     top: 20%;
 }
 
-#imageIndex11 {
-    left: 5%;
-    bottom: 20%;
+#imageIndex7 {
+    left: 60%;
+    top: 15%;
 }
 
-#imageIndex12 {
-    left: 0%;
-    bottom: 20%;
+#imageIndex8 {
+    left: 80%;
+    bottom: 15%;
 }
 
-.agendaIndex{
-   
-    
+#imageIndex9 {
+    right: 75%;
+    top: 5%;
 }
+
+#imageIndex10{
+    right: 60%;
+    top: 55%;
+}
+
+#imageIndex11{
+    right: 40%;
+    top: 10%;
+}
+
+#imageIndex12{
+    right: 30%;
+    bottom: 10%;
+}
+
 
 footer {
     position: absolute;
@@ -209,8 +205,7 @@ footer {
 
 .moveRight, .moveLeft {
     position: absolute;
-    top: 50%;
-    opacity: 0;
+    /* opacity: 0;*/
     transition: opacity 2s ease-in-out;
 }
 

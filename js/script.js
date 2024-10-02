@@ -8,7 +8,7 @@ window.onload = function() {
     setTimeout(() => {
         moveRightElements.forEach(el => el.style.opacity = '1');
         moveLeftElements.forEach(el => el.style.opacity = '1');
-    }, 2000);
+    }, 500);
 
     function animate() {
         moveRightElements.forEach(el => {
