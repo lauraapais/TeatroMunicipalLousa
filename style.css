@@ -209,7 +209,7 @@ footer {
 }
 
 
-@media (max-width: 1700px){
+@media (max-width: 1400px){
 
     span{
         font-size: calc(15px + 1.5vw);
