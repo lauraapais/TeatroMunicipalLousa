@@ -3,7 +3,8 @@
     --grey: #707070;
     --black: #000;
 
-    --headerHeight: calc(var(--vh, 1h)*10);;
+    --headerHeight: calc(var(--vh, 1h)*10);
+    ;
     --marginDesktop: 2vw;
     --marginMobile: 4vw;
 }
@@ -21,7 +22,7 @@ body {
     font-style: normal;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -155,42 +156,47 @@ header {
 }
 
 #imageIndex5 {
-    left: -40%;
+    left: calc(-40% - 10%);
+    ;
     bottom: 10%;
 }
 
 #imageIndex6 {
-    left:  -30%;
+    left: calc(-30% - 10%);
+    ;
     top: 20%;
 }
 
 #imageIndex7 {
-    left: -60%;
+    left: calc(-60% - 10%);
+    ;
     top: 15%;
 }
 
 #imageIndex8 {
-    left: -80%;
+    left: calc(-80% - 10%);
+    ;
     bottom: 15%;
 }
 
 #imageIndex9 {
-    right: -75%;
+    right: calc(-75% - 10%);
+    ;
     top: 5%;
 }
 
-#imageIndex10{
-    right: -60%;
+#imageIndex10 {
+    right: calc(-60% - 10%);
     top: 55%;
 }
 
-#imageIndex11{
-    right: -40%;
-    top: 10%;
+#imageIndex11 {
+    right: calc(-40% - 10%);
+    top: 5%;
 }
 
-#imageIndex12{
-    right: -30%;
+#imageIndex12 {
+    right: calc(-30% - 10%);
     bottom: 10%;
 }
 
@@ -203,31 +209,36 @@ footer {
     padding: calc(var(--marginDesktop)/2) var(--marginDesktop)
 }
 
-.moveRight, .moveLeft {
+.moveRight,
+.moveLeft {
     position: absolute;
-opacity: 0;
+    /*opacity: 0;*/
     transition: opacity 2s ease-in-out;
 }
 
 /* Para mover os elementos à direita e à esquerda */
 .moveRight {
-    left: 0; /* Inicia da esquerda */
+    left: 0;
+    /* Inicia da esquerda */
 }
 
 .moveLeft {
-    right: 0; /* Inicia da direita */
+    right: 0;
+    /* Inicia da direita */
 }
 
 
-@media (orientation: portrait), (max-width: 1200px) {
-    span{
+@media (orientation: portrait),
+(max-width: 1200px) {
+    span {
         font-size: calc(15px + 1.5vw);
     }
+
     header {
         padding: var(--marginDesktop);
     }
 
-    .agendaIndex{
+    .agendaIndex {
         width: auto;
     }
 
@@ -247,39 +258,101 @@ opacity: 0;
     .logoInfo {
         display: block;
     }
-    
-    #indexGeneral span{
+
+    #indexGeneral span {
         padding: var(--marginMobile);
     }
 
-    footer{
+    footer {
         padding: var(--marginDesktop);
     }
-}
 
-
-@media (orientation: portrait), (max-width: 600px) {
-    #logoMainIndex_2 {
-        position: absolute;
-        left: -300px;
-        bottom:  calc(var(--vh, 1h)*15);
+    #imageIndex1 {
+        left: 40%;
+        top: 5%;
     }
-}
 
-#cursor {
-    position: fixed;
-    background-color: var(--black);
+    #imageIndex2 {
+        left: -15%;
+        bottom: calc(var(--vh, 1h)*15);
+    }
 
-    width: 2em;
-    height: 2em;
-    border-radius: 100%;
-    pointer-events: none;
-    transition: width .2s ease-in-out, height .2s ease-in-out;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
+    #imageIndex3 {
+        right: 10%;
+        top: 55%;
+    }
 
-#cursor.active {
-    width: 6em;
-    height: 6em;
-}
+    #imageIndex4 {
+        right: -20%;
+        top: 35%;
+    }
+
+    #imageIndex5 {
+        left: calc(-20% - 100%);
+        top: 50%;
+    }
+
+    #imageIndex6 {
+        left: calc(-40% - 200%);
+        top: 30%;
+    }
+    
+    #imageIndex7 {
+        left: calc(-10% - 200%);
+        top: 70%;
+    }
+
+    #imageIndex8 {
+        left: calc(-10% - 100%);
+        top: 20%;
+    }
+    
+    #imageIndex9 {
+        right: calc(-55% - 100%);
+        top: 35%;
+    }
+
+    #imageIndex10 {
+        right: calc(-10% - 200%);
+        top: 10%;
+    }
+
+    #imageIndex11 {
+        right: calc(-30% - 200%);
+        top: 40%;
+    }
+
+    #imageIndex12 {
+        right: calc(-5% - 100%);
+        bottom: calc(var(--vh, 1h)*20);
+    }
+
+
+
+
+    @media (orientation: portrait),
+    (max-width: 600px) {
+        #logoMainIndex_2 {
+            position: absolute;
+            left: -300px;
+            bottom: calc(var(--vh, 1h)*15);
+        }
+    }
+
+    #cursor {
+        position: fixed;
+        background-color: var(--black);
+
+        width: 2em;
+        height: 2em;
+        border-radius: 100%;
+        pointer-events: none;
+        transition: width .2s ease-in-out, height .2s ease-in-out;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    #cursor.active {
+        width: 6em;
+        height: 6em;
+    }
