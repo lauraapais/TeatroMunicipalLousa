@@ -56,7 +56,7 @@ header {
 }
 
 .logoHeader svg {
-    width: 4%;
+    height: 100%;
 }
 
 #bodyIndex {
@@ -209,7 +209,7 @@ footer {
         font-size: calc(10px + 1.5vw);
     }
     header {
-        padding: var(--marginMobile);
+        padding: var(--marginDesktop);
     }
 
     .agendaIndex{
@@ -233,9 +233,7 @@ footer {
         position: absolute;
     }
 
-    .logoHeader svg {
-        width: 10%;
-    }
+
 
     footer{
         padding: var(--marginMobile);
