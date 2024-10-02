@@ -26,6 +26,7 @@ footer p {
 
 p{
     font-size: calc(9px + 0.390625vw);
+    line-height: calc(13px + 0.390625vw);
 }
 
 span{
@@ -75,21 +76,43 @@ header {
     justify-content: space-between;
 }
 
-.logoIndexContainer{
-    width: 75%;
-}
 
 
 
-#logoMainIndex_2{
-    position: absolute;
-    left: 50%;
-}
 
-#logoMainIndex_1  svg, #logoMainIndex_2 svg {
-    min-height: 50vh;
-    max-height: 60vh;
-}
+
+
+
+@media (orientation: landscape) {
+    #logoMainIndex_1  svg, #logoMainIndex_2 svg {
+        /*min-height: 50vh;
+        max-height: 60vh;*/
+        height: 50vh;
+    }
+    #logoMainIndex_2{
+        position: absolute;
+        right: -5%;
+        bottom: -5%;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #logoMainIndex_1  svg, #logoMainIndex_2 svg {
+        /*min-height: 50vh;
+        max-height: 60vh;*/
+        height: 40vh;
+    }
+    #logoMainIndex_2{
+        position: absolute;
+        right: 20%;
+        bottom: 15%;
+    }
+    
+    #logoMainIndex_1{
+        position: absolute;
+        right: -80%;
+    }
+  }
 
 
 .agendaIndex{
