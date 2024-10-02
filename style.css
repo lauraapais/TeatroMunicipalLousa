@@ -21,6 +21,10 @@ body {
     font-style: normal;
 }
 
+a{
+    text-decoration: none;
+}
+
 footer p {
     color: var(--grey);
 }
@@ -246,4 +250,23 @@ footer {
     .agendaIndex{
         
     }
+}
+
+
+#cursor {
+    position: fixed;
+    background-color: #D7D6D4;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+}
+
+#cursor.active {
+    width: 6em;
+    height: 6em;
 }
