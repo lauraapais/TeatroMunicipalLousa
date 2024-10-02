@@ -212,19 +212,16 @@ footer {
 .moveRight,
 .moveLeft {
     position: absolute;
-    /*opacity: 0;*/
+    opacity: 0;
     transition: opacity 2s ease-in-out;
 }
 
-/* Para mover os elementos à direita e à esquerda */
 .moveRight {
     left: 0;
-    /* Inicia da esquerda */
 }
 
 .moveLeft {
     right: 0;
-    /* Inicia da direita */
 }
 
 
@@ -244,8 +241,6 @@ footer {
 
     #logoMainIndex_1 svg,
     #logoMainIndex_2 svg {
-        /*min-height: 50vh;
-        max-height: 60vh;*/
         height: calc(var(--vh, 1h)*40);
     }
 
