@@ -229,13 +229,13 @@ footer {
     #logoMainIndex_2 svg {
         /*min-height: 50vh;
         max-height: 60vh;*/
-        height: calc(var(--vh, 1h)*43);
+        height: calc(var(--vh, 1h)*40);
     }
 
     #logoMainIndex_2 {
         position: absolute;
         right: -200px;
-        bottom: 12%;
+        bottom: calc(var(--vh, 1h)*15);
     }
 
     .logoInfo {
@@ -256,7 +256,7 @@ footer {
     #logoMainIndex_2 {
         position: absolute;
         left: -300px;
-        bottom:  calc(var(--vh, 1h)*12);
+        bottom:  calc(var(--vh, 1h)*15);
     }
 }
 
