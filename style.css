@@ -212,40 +212,10 @@ footer {
 
 @media (max-width: 1200px){
 
-    span{
-        font-size: calc(15px + 1.5vw);
-    }
-    header {
-        padding: var(--marginDesktop);
-    }
-
-    .agendaIndex{
-        width: auto;
-    }
-
-    #logoMainIndex_1 svg,
-    #logoMainIndex_2 svg {
-        height: 43vh;
-    }
-
-    #logoMainIndex_2 {
-        position: absolute;
-        right: -300px;
-        bottom: 12%;
-    
-    }
-    .logoInfo {
-        display: block;
-    }
-    
-
-    footer{
-        padding: var(--marginDesktop);
-    }
-    
+  
 }
 
-@media (orientation: portrait), (max-width: 1300px) {
+@media (orientation: portrait), (max-width: 1200px) {
     span{
         font-size: calc(15px + 1.5vw);
     }
@@ -266,7 +236,7 @@ footer {
 
     #logoMainIndex_2 {
         position: absolute;
-        right: 20%;
+        left: -700px;
         bottom: 12%;
     }
 
