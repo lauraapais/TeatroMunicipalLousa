@@ -5,6 +5,7 @@
 
     --headerHeight: 10vh;
     --marginDesktop: 2vw;
+    --marginMobile: 4vw;
 }
 
 /*Geral*/
@@ -24,12 +25,12 @@ footer p {
     color: var(--grey);
 }
 
-p{
+p {
     font-size: calc(9px + 0.390625vw);
     line-height: calc(13px + 0.390625vw);
 }
 
-span{
+span {
     font-size: calc(2px + 1.5vw);
     line-height: calc(2px + 1.5vw);
 }
@@ -37,7 +38,7 @@ span{
 /*Index*/
 #indexGeneral {
     height: calc(var(--vh, 1h)*100);
-
+    user-select: none;
 }
 
 #indexGeneral span {
@@ -58,9 +59,10 @@ header {
     width: 4%;
 }
 
-#bodyIndex{
+#bodyIndex {
     overflow-x: hidden;
 }
+
 #mainIndex {
     height: 100vh;
     width: 100vw;
@@ -68,9 +70,10 @@ header {
     top: 0;
     overflow-y: hidden;
     overflow-x: hidden;
+
 }
 
-.logoInfo{
+.logoInfo {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -84,121 +87,107 @@ header {
 
 
 @media (orientation: landscape) {
-    #logoMainIndex_1  svg, #logoMainIndex_2 svg {
+
+    #logoMainIndex_1 svg,
+    #logoMainIndex_2 svg {
         /*min-height: 50vh;
         max-height: 60vh;*/
         height: 50vh;
     }
-    #logoMainIndex_2{
+
+    #logoMainIndex_2 {
         position: absolute;
         right: -5%;
         bottom: -5%;
     }
-  }
-  
-  @media (orientation: portrait) {
-    #logoMainIndex_1  svg, #logoMainIndex_2 svg {
-        /*min-height: 50vh;
-        max-height: 60vh;*/
-        height: 40vh;
-    }
-    #logoMainIndex_2{
-        position: absolute;
-        right: 20%;
-        bottom: 15%;
-    }
-    
-    #logoMainIndex_1{
-        position: absolute;
-        right: -80%;
-    }
-  }
+}
 
 
-.agendaIndex{
-    width:25%;
+
+.agendaIndex {
+    width: 25%;
     display: flex;
     align-items: center;
 }
 
-#imagesIndex{
+#imagesIndex {
     position: absolute;
-    top:0;
+    top: 0;
     z-index: -1;
-    width:100vw;
-height: 100vh;
-display: none;
+    width: 100vw;
+    height: 100vh;
+    display: none;
 }
 
-.imageIndex{
+.imageIndex {
     position: absolute;
 }
 
-.imageIndexVertical{
-    width:calc(150px + 5vw);
+.imageIndexVertical {
+    width: calc(150px + 5vw);
 }
 
-.imageIndexHorizontal{
+.imageIndexHorizontal {
     height: calc(120px + 5vw);
 }
 
-#imageIndex1{
-    right:5%;
+#imageIndex1 {
+    right: 5%;
     top: 3%;
-} 
+}
 
-#imageIndex2{
-    right:15%;
+#imageIndex2 {
+    right: 15%;
     top: 45%;
-} 
+}
 
-#imageIndex3{
+#imageIndex3 {
     left: 15%;
     top: 10%;
-} 
+}
 
 
-#imageIndex4{
-    left:40%;
+#imageIndex4 {
+    left: 40%;
     bottom: 5%;
 }
 
-#imageIndex5{
+#imageIndex5 {
     left: 30%;
     bottom: 25%;
 }
 
-#imageIndex6{
+#imageIndex6 {
     right: 5%;
     bottom: 5%;
 }
 
-#imageIndex7{
+#imageIndex7 {
     left: 3%;
     top: 25%;
 }
 
-#imageIndex8{
+#imageIndex8 {
     left: 50%;
     top: 10%;
 }
 
-#imageIndex9{
+#imageIndex9 {
     right: calc(100% + 40%);
     top: 30%;
 }
 
-#imageIndex10{
+#imageIndex10 {
     right: calc(100% + 10%);
     top: 20%;
 }
 
-#imageIndex11{
+#imageIndex11 {
     left: 5%;
     bottom: 20%;
 }
 
-#imageIndex12{
+#imageIndex12 {
     left: calc(100% - 0%);
     bottom: 20%;
 }
@@ -210,5 +199,51 @@ footer {
     bottom: 0;
     display: flex;
     gap: calc(var(--marginDesktop)*2);
-    padding: calc(var(--marginDesktop)/2) var(--marginDesktop) 
+    padding: calc(var(--marginDesktop)/2) var(--marginDesktop)
+}
+
+
+@media (orientation: portrait) {
+
+    span{
+        font-size: calc(10px + 1.5vw);
+    }
+    header {
+        padding: var(--marginMobile);
+    }
+
+    .agendaIndex{
+        width: auto;
+    }
+
+    #logoMainIndex_1 svg,
+    #logoMainIndex_2 svg {
+        /*min-height: 50vh;
+        max-height: 60vh;*/
+        height: 40vh;
+    }
+
+    #logoMainIndex_2 {
+        position: absolute;
+        right: 20%;
+        bottom: 15%;
+    }
+
+    #logoMainIndex_1 {
+        position: absolute;
+    }
+
+    .logoHeader svg {
+        width: 10%;
+    }
+
+    footer{
+        padding: var(--marginMobile);
+    }
+
+    .agendaIndex{
+        position: absolute;
+        top: 33%;
+        left: var(--marginMobile);
+    }
 }
