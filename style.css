@@ -206,7 +206,7 @@ footer {
 @media (orientation: portrait) {
 
     span{
-        font-size: calc(10px + 1.5vw);
+        font-size: calc(15px + 1.5vw);
     }
     header {
         padding: var(--marginDesktop);
@@ -226,22 +226,24 @@ footer {
     #logoMainIndex_2 {
         position: absolute;
         right: 20%;
-        bottom: 15%;
-    }
-
-    #logoMainIndex_1 {
-        position: absolute;
+        bottom: 12%;
     }
 
 
+    .logoInfo {
+        display: block;
+    }
+    
+
+#indexGeneral span{
+    padding: var(--marginMobile);
+}
 
     footer{
         padding: var(--marginMobile);
     }
 
     .agendaIndex{
-        position: absolute;
-        top: 33%;
-        left: var(--marginMobile);
+        
     }
 }
