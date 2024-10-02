@@ -201,6 +201,7 @@ header {
 }
 
 footer {
+    width:100vw;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -229,7 +230,7 @@ footer {
 
     #logoMainIndex_2 {
         position: absolute;
-        right: -10%;
+        right: -300px;
         bottom: 12%;
     
     }
