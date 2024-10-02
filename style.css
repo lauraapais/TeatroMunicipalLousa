@@ -196,7 +196,9 @@ header {
     bottom: 20%;
 }
 
-
+.agendaIndex{
+    display: none;
+}
 
 footer {
     position: absolute;
