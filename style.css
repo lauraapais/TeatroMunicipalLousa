@@ -233,10 +233,9 @@ footer {
 
     #logoMainIndex_2 {
         position: absolute;
-        right: -320px;
+        right: -200px;
         bottom: 12%;
     }
-
 
     .logoInfo {
         display: block;
@@ -251,6 +250,14 @@ footer {
     }
 }
 
+
+@media (orientation: portrait), (max-width: 600px) {
+    #logoMainIndex_2 {
+        position: absolute;
+        left: -300px;
+        bottom: 12%;
+    }
+}
 
 #cursor {
     position: fixed;
