@@ -90,21 +90,6 @@ header {
 
 
 
-@media (orientation: landscape) {
-
-    #logoMainIndex_1 svg,
-    #logoMainIndex_2 svg {
-        /*min-height: 50vh;
-        max-height: 60vh;*/
-        height: 58vh;
-    }
-
-    #logoMainIndex_2 {
-        position: absolute;
-        right: -5%;
-        bottom: -21%;
-    }
-}
 
 
 
@@ -236,7 +221,7 @@ footer {
 
     #logoMainIndex_2 {
         position: absolute;
-        left: -700px;
+        left: -320px;
         bottom: 12%;
     }
 
