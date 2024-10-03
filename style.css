@@ -105,7 +105,6 @@ header {
 
 
 
-
 .agendaIndex {
     width: 25%;
     display: flex;
@@ -239,6 +238,24 @@ footer {
     height: 6em;
 }
 
+
+
+@media (orientation: landscape) {
+
+    #logoMainIndex_1 svg,
+    #logoMainIndex_2 svg {
+        /*min-height: 50vh;
+        max-height: 60vh;*/
+        height: calc(var(--vh, 1h)*58);
+    }
+
+    #logoMainIndex_2 {
+        position: absolute;
+        right: -5%;
+        bottom: -21%;
+        z-index: -1;
+    }
+}
 
 @media (orientation: portrait),
 (max-width: 1200px) {
