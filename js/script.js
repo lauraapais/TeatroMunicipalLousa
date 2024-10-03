@@ -10,7 +10,7 @@ window.onload = function() {
 
     let margin = window.innerWidth * 0.6;
     if (isMobile && isPortrait) {
-        margin *= 5;
+        margin *= 2;
     }
 
     setTimeout(() => {

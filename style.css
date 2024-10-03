@@ -293,42 +293,42 @@ footer {
     }
 
     #imageIndex5 {
-        left: calc(-20% - 100%);
+        left: calc(-20% - 200%);
         top: 50%;
     }
 
     #imageIndex6 {
-        left: calc(-40% - 200%);
+        left: calc(-40% - 300%);
         top: 30%;
     }
     
     #imageIndex7 {
-        left: calc(-10% - 200%);
+        left: calc(-10% - 300%);
         bottom: calc(var(--vh, 1h)*15);
     }
 
     #imageIndex8 {
-        left: calc(-10% - 100%);
+        left: calc(-10% - 200%);
         top: 20%;
     }
     
     #imageIndex9 {
-        right: calc(-55% - 100%);
+        right: calc(-55% - 200%);
         top: 35%;
     }
 
     #imageIndex10 {
-        right: calc(-10% - 200%);
+        right: calc(-10% - 300%);
         top: 10%;
     }
 
     #imageIndex11 {
-        right: calc(-30% - 200%);
+        right: calc(-30% - 300%);
         top: 40%;
     }
 
     #imageIndex12 {
-        right: calc(-5% - 100%);
+        right: calc(-5% - 200%);
         bottom: calc(var(--vh, 1h)*20);
     }
 }
