@@ -47,7 +47,6 @@ p::selection {
 
 span {
     font-size: calc(2px + 1.5vw);
-    line-height: calc(2px + 1.5vw);
 }
 
 /*Index*/
