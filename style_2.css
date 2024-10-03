@@ -67,7 +67,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: calc(var(--vh, 1h)*100);
+    height: calc(var(--vh, 1h)*100);
     width: 100vw;
 }
 
@@ -104,7 +104,7 @@ span {
 }
 
 .agendaIndex{
-    margin: var(--marginDesktop);
+    margin: calc(var(--marginDesktop) / 1.2);
 }
 
 
@@ -247,7 +247,8 @@ footer p{
 
 #logoMainIndex_2 svg{
     position: absolute;
-    left: -500px;
+    right: 0;
+    z-index: -1;
 }
 
 
@@ -262,4 +263,80 @@ footer p{
     font-size: 15px;
 }
 
+#mainIndexContent{
+    height: auto;
+ min-height: calc(var(--vh, 1h)*100);
+}
+
+.imageIndexVertical {
+    width: calc(100px + 5vw);
+}
+
+.imageIndexHorizontal {
+    height: calc(80px + 5vw);
+}
+
+#imageIndex1 {
+    left: 40%;
+    top: 5%;
+}
+
+#imageIndex2 {
+    left: -15%;
+    bottom: calc(var(--vh, 1h)*15);
+}
+
+#imageIndex3 {
+    right: 10%;
+    top: 55%;
+}
+
+#imageIndex4 {
+    right: -20%;
+    top: 35%;
+}
+
+#imageIndex5 {
+    left: calc(-20% - 150%);
+    top: 50%;
+}
+
+#imageIndex6 {
+    left: calc(-40% - 350%);
+    top: 30%;
+}
+
+#imageIndex7 {
+    left: calc(-10% - 300%);
+    top:20%;
+}
+
+#imageIndex8 {
+    left: calc(-10% - 250%);
+    bottom: calc(var(--vh, 1h)*15);
+}
+
+#imageIndex9 {
+    right: calc(-55% - 150%);
+    top: 35%;
+}
+
+#imageIndex10 {
+    right: calc(-10% - 350%);
+    top: 10%;
+}
+
+#imageIndex11 {
+    right: calc(-30% - 300%);
+    top: 50%;
+}
+
+#imageIndex12 {
+    right: calc(-5% - 150%);
+    bottom: calc(var(--vh, 1h)*20);
+}
+
+#cursor{
+    display: none;
+}
 }
