@@ -1,0 +1,265 @@
+:root {
+    --white: #FFFFFF;
+    --grey: #707070;
+    --black: #000;
+
+    --headerHeight: calc(var(--vh, 1h)*10);
+
+    --marginDesktop: 2vh;
+    --marginMobile: 4vw;
+}
+
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+footer p {
+    color: var(--grey);
+}
+
+p {
+    font-size: calc(9px + 0.390625vw);
+}
+
+p::selection {
+    color: var(--white);
+    background-color: var(--grey);
+  }
+
+  a::selection {
+    color: var(--white);
+    background-color: var(--grey);
+  }
+
+span {
+    font-size: 30px;
+}
+
+#indexGeneral span {
+    color: var(--grey);
+}
+
+#indexGeneral {
+    height: calc(var(--vh, 1h)*100);
+}
+
+#mainIndex{
+    user-select: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#mainIndexContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(var(--vh, 1h)*100);
+    width: 100vw;
+}
+
+.logoHeader {
+    height: 10vh;
+    position: absolute;
+    top: var(--marginDesktop);
+    left: var(--marginDesktop);
+}
+
+.logoHeader svg {
+    height: 100%;
+}
+
+#bodyIndex {
+    overflow-x: hidden;
+}
+
+#logoMainIndex_1, #logoMainIndex_2{
+    height: 56vh;
+}
+
+#logoMainIndex_1 svg, #logoMainIndex_2 svg{
+    height: 100%;
+}
+
+#logoMainIndex_2{
+    position: relative;
+}
+
+#logoMainIndex_2 svg{
+    position: absolute;
+    right:-200px;
+}
+
+.agendaIndex{
+    margin: var(--marginDesktop);
+}
+
+
+#imagesIndex {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: calc(var(--vh, 1h)*100);
+}
+
+.imageIndex {
+    position: absolute;
+}
+
+.imageIndexVertical {
+    width: calc(150px + 5vw);
+}
+
+.imageIndexHorizontal {
+    height: calc(120px + 5vw);
+}
+
+#imageIndex1 {
+    left: 7%;
+    top: 45%;
+}
+
+#imageIndex2 {
+    left: 45%;
+    bottom: 10%;
+}
+
+#imageIndex3 {
+    right: 20%;
+    top: 50%;
+}
+
+#imageIndex4 {
+    right: 10%;
+    top: 5%;
+}
+
+#imageIndex5 {
+    left: calc(-40% - 10%);
+    ;
+    bottom: 10%;
+}
+
+#imageIndex6 {
+    left: calc(-30% - 30%);
+    ;
+    top: 20%;
+}
+
+#imageIndex7 {
+    left: calc(-60% - 30%);
+    ;
+    top: 15%;
+}
+
+#imageIndex8 {
+    left: calc(-80% - 10%);
+    ;
+    bottom: 15%;
+}
+
+#imageIndex9 {
+    right: calc(-75% - 30%);
+    ;
+    top: 5%;
+}
+
+#imageIndex10 {
+    right: calc(-60% - 30%);
+    top: 55%;
+}
+
+#imageIndex11 {
+    right: calc(-40% - 10%);
+    top: 5%;
+}
+
+#imageIndex12 {
+    right: calc(-30% - 10%);
+    bottom: 10%;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+
+    display: flex;
+    gap: var(--marginDesktop);
+    padding: var(--marginDesktop);
+}
+
+footer p{
+    font-size: 15px;
+}
+
+
+#cursor {
+    position: fixed;
+    background-color: var(--black);
+
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#cursor.active {
+    width: 6em;
+    height: 6em;
+}
+
+
+@media (orientation: portrait){
+/*Index*/
+
+#logoMainIndex_1, #logoMainIndex_2{
+    height: 45vh;
+}
+
+
+.agendaIndex {
+    margin: var(--marginDesktop);
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+#logoMainIndex_2{
+    position: relative;
+}
+
+#logoMainIndex_2 svg{
+    position: absolute;
+    left: -500px;
+}
+
+
+footer{
+    position: initial;
+    display: flex;
+    gap: var(--marginMobile);
+    padding: var(--marginMobile);
+}
+
+footer p{
+    font-size: 15px;
+}
+
+}
