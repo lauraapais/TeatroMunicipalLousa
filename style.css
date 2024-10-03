@@ -334,12 +334,12 @@ footer {
     
     #imageIndex7 {
         left: calc(-10% - 300%);
-        bottom: calc(var(--vh, 1h)*15);
+        top:20%;
     }
 
     #imageIndex8 {
         left: calc(-10% - 250%);
-        top: 20%;
+        bottom: calc(var(--vh, 1h)*15);
     }
     
     #imageIndex9 {
@@ -354,7 +354,7 @@ footer {
 
     #imageIndex11 {
         right: calc(-30% - 300%);
-        top: 40%;
+        top: 50%;
     }
 
     #imageIndex12 {
