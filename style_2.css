@@ -101,7 +101,7 @@ span {
 
 #logoMainIndex_2 svg{
     position: absolute;
-    right:0;
+    right:-200px;
 }
 
 .agendaIndex{
