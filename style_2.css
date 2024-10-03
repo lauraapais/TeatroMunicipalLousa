@@ -263,7 +263,7 @@ footer p {}
 
     #logoMainIndex_1,
     #logoMainIndex_2 {
-        height: 45vh;
+        height: calc(var(--vh, 1h)*45);
     }
 
 
