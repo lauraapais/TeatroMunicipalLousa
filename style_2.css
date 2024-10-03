@@ -23,6 +23,10 @@ body {
     cursor:none;
 }
 
+a:hover{
+    cursor:none;
+}
+
 a {
     text-decoration: none;
     color: var(--grey);
