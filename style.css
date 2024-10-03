@@ -376,9 +376,10 @@ footer {
     @media (orientation: portrait),
     (max-width: 600px) {
         .agendaIndex {
-            width: 50%;
+            width: 30%;
             top:33%;
             position:absolute;
+            left: var(--marginDesktop);
         }
 
         span {
