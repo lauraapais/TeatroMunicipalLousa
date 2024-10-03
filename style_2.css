@@ -102,6 +102,7 @@ span {
 
 #logoMainIndex_2{
     position: relative;
+    z-index: -1;
 }
 
 #logoMainIndex_2 svg{
