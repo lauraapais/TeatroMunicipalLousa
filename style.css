@@ -205,6 +205,10 @@ footer {
     padding: calc(var(--marginDesktop)/2) var(--marginDesktop)
 }
 
+footer p{
+    margin-top:3px;
+}
+
 .moveRight,
 .moveLeft {
     position: absolute;
@@ -369,9 +373,7 @@ footer {
         display: none;
     }
 
-    footer p{
-        margin-top:3px;
-    }
+   
 }
 
 
