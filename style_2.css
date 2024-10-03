@@ -213,7 +213,9 @@ footer {
     padding: var(--marginDesktop);
 }
 
-footer p {}
+footer p {
+    margin-top: 3px;
+}
 
 .moveRight,
 .moveLeft {
@@ -284,15 +286,12 @@ footer p {}
         z-index: -1;
     }
 
-
     footer {
         position: initial;
         display: flex;
         gap: var(--marginMobile);
         padding: var(--marginMobile);
     }
-
-
 
     #mainIndexContent {
         height: auto;
