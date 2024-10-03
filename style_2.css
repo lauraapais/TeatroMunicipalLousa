@@ -60,6 +60,7 @@ span {
 
 #mainIndex{
     user-select: none;
+    width:100vw;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -115,9 +116,11 @@ span {
     z-index: -1;
     width: 100vw;
     height: calc(var(--vh, 1h)*100);
+    overflow-x: hidden;
 }
 
 .imageIndex {
+    
     position: absolute;
 }
 
