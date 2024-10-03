@@ -4,8 +4,8 @@
     --black: #000;
 
     --headerHeight: calc(var(--vh, 1h)*10);
-
-    --marginDesktop: 2vh;
+    ;
+    --marginDesktop: 2vw;
     --marginMobile: 4vw;
 }
 
@@ -20,11 +20,6 @@ body {
     font-family: "area-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
-    cursor: none;
-}
-
-a:hover {
-    cursor: none;
 }
 
 a {
@@ -37,51 +32,44 @@ footer p {
 }
 
 p {
-    font-size: calc(8px + 0.390625vw);
+    font-size: calc(9px + 0.390625vw);
 }
 
 p::selection {
     color: var(--white);
     background-color: var(--grey);
-}
+  }
 
-a::selection {
+  a::selection {
     color: var(--white);
     background-color: var(--grey);
-}
+  }
 
 span {
-    font-size: calc(22px + 0.390625vw);
+    font-size: calc(2px + 1.5vw);
+}
+
+/*Index*/
+#indexGeneral {
+    height: calc(var(--vh, 1h)*100);
+   
+}
+
+#mainIndex{
+    user-select: none;
 }
 
 #indexGeneral span {
     color: var(--grey);
 }
 
-#indexGeneral {
-    height: calc(var(--vh, 1h)*100);
-}
-
-#mainIndex {
-    user-select: none;
-    width: 100vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-#mainIndexContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(var(--vh, 1h)*100);
-    width: 100vw;
+header {
+    height: var(--headerHeight);
+    padding: var(--marginDesktop);
 }
 
 .logoHeader {
-    height: 10vh;
-    position: absolute;
-    top: var(--marginDesktop);
-    left: var(--marginDesktop);
+    height: var(--headerHeight);
 }
 
 .logoHeader svg {
@@ -92,30 +80,36 @@ span {
     overflow-x: hidden;
 }
 
-#logoMainIndex_1,
-#logoMainIndex_2 {
-    height: 56vh;
-}
-
-#logoMainIndex_1 svg,
-#logoMainIndex_2 svg {
-    height: 100%;
-}
-
-#logoMainIndex_2 {
-    position: relative;
-    z-index: -1;
-}
-
-#logoMainIndex_2 svg {
+#mainIndex {
+    height: calc(var(--vh, 1h)*100);
+    width: 100vw;
     position: absolute;
-    right: -200px;
+    top: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
 }
+
+.logoInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
 
 .agendaIndex {
-    margin: calc(var(--marginDesktop));
+    width: 25%;
+    display: flex;
+    align-items: center;
 }
-
 
 #imagesIndex {
     position: absolute;
@@ -123,11 +117,9 @@ span {
     z-index: -1;
     width: 100vw;
     height: calc(var(--vh, 1h)*100);
-    overflow-x: hidden;
 }
 
 .imageIndex {
-
     position: absolute;
 }
 
@@ -204,17 +196,17 @@ span {
     bottom: 10%;
 }
 
+
 footer {
     position: absolute;
     bottom: 0;
-
     display: flex;
-    gap: var(--marginDesktop);
-    padding: var(--marginDesktop);
+    gap: calc(var(--marginDesktop)*2);
+    padding: calc(var(--marginDesktop)/2) var(--marginDesktop)
 }
 
-footer p {
-    margin-top: 1px;
+footer p{
+    margin-top:3px;
 }
 
 .moveRight,
@@ -251,57 +243,68 @@ footer p {
 }
 
 
-@media (orientation: portrait) {
-    p {
-        font-size: calc(10px + 0.390625vw);
-    }
-    
-    span {
-        font-size: calc(18px + 0.390625vw);
-    }
 
-    
-    /*Index*/
+@media (orientation: landscape) {
 
-    #logoMainIndex_1,
-    #logoMainIndex_2 {
-        height: calc(var(--vh, 1h)*45);
-    }
-
-
-    .agendaIndex {
-        margin: var(--marginDesktop);
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    #logoMainIndex_2 {
-        position: relative;
-    }
-
+    #logoMainIndex_1 svg,
     #logoMainIndex_2 svg {
+        /*min-height: 50vh;
+        max-height: 60vh;*/
+        height: calc(var(--vh, 1h)*58);
+    }
+
+    #logoMainIndex_2 {
         position: absolute;
-        right: 0;
+        right: -5%;
+        bottom: -21%;
         z-index: -1;
     }
+}
 
-    footer {
-        position: initial;
-        display: flex;
-        gap: var(--marginMobile);
+@media (orientation: portrait),
+(max-width: 1100px) {
+    span {
+        font-size: calc(15px + 1.5vw);
+    }
+
+    header {
+        padding: var(--marginDesktop);
+    }
+
+    .agendaIndex {
+        width: auto;
+        margin: 1em 0;
+    }
+
+    #logoMainIndex_1 svg,
+    #logoMainIndex_2 svg {
+        height: calc(var(--vh, 1h)*40);
+    }
+
+    #logoMainIndex_2 {
+        position: absolute;
+        right: -200px;
+        /*bottom: calc(var(--vh, 1h)*15);*/
+        top: calc(calc(15px + 1.5vw + 3em + var(--vh, 1h)*40))
+        /*SOMA DA ALTURA DO SVG DE CIMA 40vh + 15px + 1.5vw DA FONTE + 2 em de MARGEM*/
+    }
+
+    .logoInfo {
+        display: block;
+    }
+
+    #indexGeneral span {
         padding: var(--marginMobile);
     }
 
-    #mainIndexContent {
-        height: auto;
-        min-height: calc(var(--vh, 1h)*100);
+    footer {
+        padding: var(--marginDesktop);
     }
 
     .imageIndexVertical {
         width: calc(100px + 5vw);
     }
-
+    
     .imageIndexHorizontal {
         height: calc(80px + 5vw);
     }
@@ -335,17 +338,17 @@ footer p {
         left: calc(-40% - 350%);
         top: 30%;
     }
-
+    
     #imageIndex7 {
         left: calc(-10% - 300%);
-        top: 20%;
+        top:20%;
     }
 
     #imageIndex8 {
         left: calc(-10% - 250%);
         bottom: calc(var(--vh, 1h)*15);
     }
-
+    
     #imageIndex9 {
         right: calc(-55% - 150%);
         top: 35%;
@@ -366,7 +369,19 @@ footer p {
         bottom: calc(var(--vh, 1h)*20);
     }
 
-    #cursor {
+    #cursor{
         display: none;
     }
+
+   
 }
+
+
+
+    @media (orientation: portrait),
+    (max-width: 600px) {
+        #logoMainIndex_2 {
+            position: absolute;
+            left: -300px;
+        }
+    }
