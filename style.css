@@ -274,14 +274,14 @@ footer {
 
     #logoMainIndex_1 svg,
     #logoMainIndex_2 svg {
-        height: calc(var(--vh, 1h)*36);
+        height: calc(var(--vh, 1h)*40);
     }
 
     #logoMainIndex_2 {
         position: absolute;
         right: -200px;
         /*bottom: calc(var(--vh, 1h)*15);*/
-        top: calc(calc(15px + 1.5vw + 3em + var(--vh, 1h)*36))
+        top: calc(calc(15px + 1.5vw + 3em + var(--vh, 1h)*40))
         /*SOMA DA ALTURA DO SVG DE CIMA 40vh + 15px + 1.5vw DA FONTE + 2 em de MARGEM*/
     }
 
@@ -367,6 +367,10 @@ footer {
 
     #cursor{
         display: none;
+    }
+
+    footer p{
+        margin-top:3px;
     }
 }
 
