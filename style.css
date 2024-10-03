@@ -375,8 +375,14 @@ footer {
 
     @media (orientation: portrait),
     (max-width: 600px) {
+        .agendaIndex {
+            width: 50%;
+            top:33%;
+            position:absolute;
+        }
+
         span {
-            font-size: calc(15px + 1.5vw);
+            font-size: calc(18px + 1.5vw);
         }
         #logoMainIndex_2 {
             position: absolute;
