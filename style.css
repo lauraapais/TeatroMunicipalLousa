@@ -258,7 +258,7 @@ footer {
 }
 
 @media (orientation: portrait),
-(max-width: 1200px) {
+(max-width: 1100px) {
     span {
         font-size: calc(15px + 1.5vw);
     }
