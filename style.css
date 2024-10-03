@@ -269,6 +269,7 @@ footer {
 
     .agendaIndex {
         width: auto;
+        margin: 1em 0;
     }
 
     #logoMainIndex_1 svg,
@@ -279,7 +280,9 @@ footer {
     #logoMainIndex_2 {
         position: absolute;
         right: -200px;
-        bottom: calc(var(--vh, 1h)*15);
+        /*bottom: calc(var(--vh, 1h)*15);*/
+        top: calc(calc(15px + 1.5vw + 3em + var(--vh, 1h)*40))
+        /*SOMA DA ALTURA DO SVG DE CIMA 40vh + 15px + 1.5vw DA FONTE + 2 em de MARGEM*/
     }
 
     .logoInfo {
@@ -377,4 +380,3 @@ footer {
             bottom: calc(var(--vh, 1h)*15);
         }
     }
-
