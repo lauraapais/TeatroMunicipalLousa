@@ -20,11 +20,11 @@ body {
     font-family: "area-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
-    cursor:none;
+    cursor: none;
 }
 
-a:hover{
-    cursor:none;
+a:hover {
+    cursor: none;
 }
 
 a {
@@ -37,21 +37,21 @@ footer p {
 }
 
 p {
-    font-size: calc(9px + 0.390625vw);
+    font-size: calc(8px + 0.390625vw);
 }
 
 p::selection {
     color: var(--white);
     background-color: var(--grey);
-  }
+}
 
-  a::selection {
+a::selection {
     color: var(--white);
     background-color: var(--grey);
-  }
+}
 
 span {
-    font-size: 30px;
+    font-size: calc(22px + 0.390625vw);
 }
 
 #indexGeneral span {
@@ -62,14 +62,14 @@ span {
     height: calc(var(--vh, 1h)*100);
 }
 
-#mainIndex{
+#mainIndex {
     user-select: none;
-    width:100vw;
+    width: 100vw;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
-#mainIndexContent{
+#mainIndexContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,25 +92,27 @@ span {
     overflow-x: hidden;
 }
 
-#logoMainIndex_1, #logoMainIndex_2{
+#logoMainIndex_1,
+#logoMainIndex_2 {
     height: 56vh;
 }
 
-#logoMainIndex_1 svg, #logoMainIndex_2 svg{
+#logoMainIndex_1 svg,
+#logoMainIndex_2 svg {
     height: 100%;
 }
 
-#logoMainIndex_2{
+#logoMainIndex_2 {
     position: relative;
     z-index: -1;
 }
 
-#logoMainIndex_2 svg{
+#logoMainIndex_2 svg {
     position: absolute;
-    right:-200px;
+    right: -200px;
 }
 
-.agendaIndex{
+.agendaIndex {
     margin: calc(var(--marginDesktop) / 1.2);
 }
 
@@ -125,7 +127,7 @@ span {
 }
 
 .imageIndex {
-    
+
     position: absolute;
 }
 
@@ -202,18 +204,17 @@ span {
     bottom: 10%;
 }
 
-footer{
+footer {
     position: absolute;
-    bottom:0;
+    bottom: 0;
 
     display: flex;
     gap: var(--marginDesktop);
     padding: var(--marginDesktop);
 }
 
-footer p{
-    font-size: 15px;
-}
+footer p {}
+
 .moveRight,
 .moveLeft {
     position: absolute;
@@ -248,117 +249,125 @@ footer p{
 }
 
 
-@media (orientation: portrait){
-/*Index*/
+@media (orientation: portrait) {
+    p {
+        font-size: calc(10px + 0.390625vw);
+    }
+    
+    span {
+        font-size: calc(18px + 0.390625vw);
+    }
 
-#logoMainIndex_1, #logoMainIndex_2{
-    height: 45vh;
-}
+    
+    /*Index*/
 
-
-.agendaIndex {
-    margin: var(--marginDesktop);
-    padding:0;
-    display: flex;
-    justify-content: center;
-}
-
-#logoMainIndex_2{
-    position: relative;
-}
-
-#logoMainIndex_2 svg{
-    position: absolute;
-    right: 0;
-    z-index: -1;
-}
+    #logoMainIndex_1,
+    #logoMainIndex_2 {
+        height: 45vh;
+    }
 
 
-footer{
-    position: initial;
-    display: flex;
-    gap: var(--marginMobile);
-    padding: var(--marginMobile);
-}
+    .agendaIndex {
+        margin: var(--marginDesktop);
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-footer p{
-    font-size: 15px;
-}
+    #logoMainIndex_2 {
+        position: relative;
+    }
 
-#mainIndexContent{
-    height: auto;
- min-height: calc(var(--vh, 1h)*100);
-}
+    #logoMainIndex_2 svg {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
 
-.imageIndexVertical {
-    width: calc(100px + 5vw);
-}
 
-.imageIndexHorizontal {
-    height: calc(80px + 5vw);
-}
+    footer {
+        position: initial;
+        display: flex;
+        gap: var(--marginMobile);
+        padding: var(--marginMobile);
+    }
 
-#imageIndex1 {
-    left: 40%;
-    top: 5%;
-}
 
-#imageIndex2 {
-    left: -15%;
-    bottom: calc(var(--vh, 1h)*15);
-}
 
-#imageIndex3 {
-    right: 10%;
-    top: 55%;
-}
+    #mainIndexContent {
+        height: auto;
+        min-height: calc(var(--vh, 1h)*100);
+    }
 
-#imageIndex4 {
-    right: -20%;
-    top: 35%;
-}
+    .imageIndexVertical {
+        width: calc(100px + 5vw);
+    }
 
-#imageIndex5 {
-    left: calc(-20% - 150%);
-    top: 50%;
-}
+    .imageIndexHorizontal {
+        height: calc(80px + 5vw);
+    }
 
-#imageIndex6 {
-    left: calc(-40% - 350%);
-    top: 30%;
-}
+    #imageIndex1 {
+        left: 40%;
+        top: 5%;
+    }
 
-#imageIndex7 {
-    left: calc(-10% - 300%);
-    top:20%;
-}
+    #imageIndex2 {
+        left: -15%;
+        bottom: calc(var(--vh, 1h)*15);
+    }
 
-#imageIndex8 {
-    left: calc(-10% - 250%);
-    bottom: calc(var(--vh, 1h)*15);
-}
+    #imageIndex3 {
+        right: 10%;
+        top: 55%;
+    }
 
-#imageIndex9 {
-    right: calc(-55% - 150%);
-    top: 35%;
-}
+    #imageIndex4 {
+        right: -20%;
+        top: 35%;
+    }
 
-#imageIndex10 {
-    right: calc(-10% - 350%);
-    top: 10%;
-}
+    #imageIndex5 {
+        left: calc(-20% - 150%);
+        top: 50%;
+    }
 
-#imageIndex11 {
-    right: calc(-30% - 300%);
-    top: 50%;
-}
+    #imageIndex6 {
+        left: calc(-40% - 350%);
+        top: 30%;
+    }
 
-#imageIndex12 {
-    right: calc(-5% - 150%);
-    bottom: calc(var(--vh, 1h)*20);
-}
+    #imageIndex7 {
+        left: calc(-10% - 300%);
+        top: 20%;
+    }
 
-#cursor{
-    display: none;
-}
+    #imageIndex8 {
+        left: calc(-10% - 250%);
+        bottom: calc(var(--vh, 1h)*15);
+    }
+
+    #imageIndex9 {
+        right: calc(-55% - 150%);
+        top: 35%;
+    }
+
+    #imageIndex10 {
+        right: calc(-10% - 350%);
+        top: 10%;
+    }
+
+    #imageIndex11 {
+        right: calc(-30% - 300%);
+        top: 50%;
+    }
+
+    #imageIndex12 {
+        right: calc(-5% - 150%);
+        bottom: calc(var(--vh, 1h)*20);
+    }
+
+    #cursor {
+        display: none;
+    }
 }
