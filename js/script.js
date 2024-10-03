@@ -8,7 +8,7 @@ window.onload = function() {
     const isPortrait = window.matchMedia("(orientation: portrait)").matches;
     const isMobile = window.innerWidth <= 768; 
 
-    let margin = window.innerWidth * 0.4;
+    let margin = window.innerWidth * 0.6;
     if (isMobile && isPortrait) {
         margin *= 5;
     }

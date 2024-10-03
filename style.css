@@ -264,6 +264,14 @@ footer {
         padding: var(--marginDesktop);
     }
 
+    .imageIndexVertical {
+        width: calc(100px + 5vw);
+    }
+    
+    .imageIndexHorizontal {
+        height: calc(80px + 5vw);
+    }
+
     #imageIndex1 {
         left: 40%;
         top: 5%;
@@ -296,7 +304,7 @@ footer {
     
     #imageIndex7 {
         left: calc(-10% - 200%);
-        top: 70%;
+        bottom: calc(var(--vh, 1h)*15);
     }
 
     #imageIndex8 {
