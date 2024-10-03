@@ -113,7 +113,7 @@ span {
 }
 
 .agendaIndex {
-    margin: calc(var(--marginDesktop) / 1.2);
+    margin: calc(var(--marginDesktop));
 }
 
 
