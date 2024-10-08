@@ -94,7 +94,7 @@ span {
 
 #logoMainIndex_1,
 #logoMainIndex_2 {
-    height: 56vh;
+    height: 55.7vh;
 }
 
 #logoMainIndex_1 svg,
@@ -127,7 +127,6 @@ span {
 }
 
 .imageIndex {
-
     position: absolute;
 }
 
@@ -162,45 +161,45 @@ span {
 #imageIndex5 {
     left: calc(-40% - 10%);
     ;
-    bottom: 10%;
+    bottom: 40%;
 }
 
 #imageIndex6 {
-    left: calc(-30% - 30%);
+    left: calc(-30% - 90%);
     ;
     top: 20%;
 }
 
 #imageIndex7 {
-    left: calc(-60% - 30%);
+    left: calc(-60% - 120%);
     ;
     top: 15%;
 }
 
 #imageIndex8 {
-    left: calc(-80% - 10%);
+    left: calc(-80% - 40%);
     ;
     bottom: 15%;
 }
 
 #imageIndex9 {
-    right: calc(-75% - 30%);
+    right: calc(-75% - 10%);
     ;
     top: 5%;
 }
 
 #imageIndex10 {
-    right: calc(-60% - 30%);
+    right: calc(-60% - 90%);
     top: 55%;
 }
 
 #imageIndex11 {
-    right: calc(-40% - 10%);
+    right: calc(-40% - 120%);
     top: 5%;
 }
 
 #imageIndex12 {
-    right: calc(-30% - 10%);
+    right: calc(-30% - 40%);
     bottom: 10%;
 }
 
@@ -250,7 +249,23 @@ footer p {
     height: 6em;
 }
 
+.hiddenDesktop{
+    display: none;
+}
 
+.hiddenMobile{
+    display: block;
+}
+
+.logoInfo{
+    position: relative;
+}
+
+.logoInfo span{
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+}
 @media (orientation: portrait) {
     p {
         font-size: calc(10px + 0.390625vw);
@@ -260,12 +275,23 @@ footer p {
         font-size: calc(18px + 0.390625vw);
     }
 
+    .hiddenMobile{
+    display: none;
+    }
+
+    .hiddenDesktop{
+        display: block;
+    }
     
     /*Index*/
 
     #logoMainIndex_1,
     #logoMainIndex_2 {
         height: calc(var(--vh, 1h)*45);
+    }
+
+    #indexGeneral span {
+        text-align: center;
     }
 
 
@@ -313,7 +339,7 @@ footer p {
 
     #imageIndex2 {
         left: -15%;
-        bottom: calc(var(--vh, 1h)*15);
+        bottom: calc(var(--vh, 1h));
     }
 
     #imageIndex3 {
@@ -338,12 +364,12 @@ footer p {
 
     #imageIndex7 {
         left: calc(-10% - 300%);
-        top: 20%;
+        top: 30%;
     }
 
     #imageIndex8 {
         left: calc(-10% - 250%);
-        bottom: calc(var(--vh, 1h)*15);
+        bottom: calc(var(--vh, 1h));
     }
 
     #imageIndex9 {
@@ -358,7 +384,7 @@ footer p {
 
     #imageIndex11 {
         right: calc(-30% - 300%);
-        top: 50%;
+        top: 60%;
     }
 
     #imageIndex12 {
