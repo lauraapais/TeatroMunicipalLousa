@@ -302,6 +302,7 @@ footer p {
         padding: 0;
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
 
     #logoMainIndex_2 {
