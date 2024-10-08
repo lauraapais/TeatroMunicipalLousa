@@ -293,7 +293,9 @@ footer p {
     #indexGeneral span {
         text-align: center;
     }
-
+#bilheteiraOnline{
+    margin-top: 1vw;
+}
 
     .agendaIndex {
         margin: var(--marginDesktop);
