@@ -287,7 +287,7 @@ footer p {
 
     #logoMainIndex_1,
     #logoMainIndex_2 {
-        height: calc(var(--vh, 1h)*45);
+        height: calc(var(--vh, 1h)* 43);
     }
 
     #indexGeneral span {
