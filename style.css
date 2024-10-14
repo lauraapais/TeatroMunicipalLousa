@@ -1,0 +1,548 @@
+:root {
+    --white: #FFFFFF;
+    --grey: #707070;
+    --black: #000;
+
+    --headerHeight: calc(var(--vh, 1h)*10);
+
+    --marginDesktop: 2vh;
+    --marginMobile: 4vw;
+}
+
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: none;
+}
+
+@font-face {
+    font-family: TMLdisplay;
+    src: url(data/TMLDisplay-Regular.otf);
+  }
+
+a:hover {
+    cursor: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+h1{
+    font-size: calc(70px + 0.390625vw);
+    font-family: "TMLdisplay";
+}
+
+h2{
+    font-size: calc(15px + 0.390625vw);
+}
+
+h3{
+    font-size: calc(6px + 0.390625vw);
+    font-weight: 500;
+}
+
+p {
+    font-size: calc(8px + 0.390625vw);
+}
+
+
+footer p {
+    color: var(--grey);
+}
+
+.navHeader{
+    width: 10%;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    z-index: 500;
+}
+
+.navHeader h2{
+    font-weight: 500;
+}
+
+.navHeader
+
+p::selection {
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+a::selection {
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+span {
+    font-size: calc(22px + 0.390625vw);
+}
+
+#indexGeneral span {
+    color: var(--grey);
+}
+
+#indexGeneral {
+    height: calc(var(--vh, 1h)*100);
+}
+
+#mainIndex {
+    user-select: none;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#mainIndexContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(var(--vh, 1h)*100);
+    width: 100vw;
+}
+
+header{
+    position: absolute;
+    top: var(--marginDesktop);
+    left: var(--marginDesktop);
+    width: calc(100vw - var(--marginDesktop)* 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoHeader {
+    height: 10vh;
+}
+
+#menuHeader{
+    height: 2vh;
+    fill: none;
+    stroke: #000;
+}
+
+.logoHeader svg {
+    height: 100%;
+}
+
+.agendaHeader{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+
+#bodyIndex {
+    overflow-x: hidden;
+}
+
+#logoMainIndex_1,
+#logoMainIndex_2 {
+    height: 55.7vh;
+}
+
+#logoMainIndex_1 svg,
+#logoMainIndex_2 svg {
+    height: 100%;
+}
+
+#logoMainIndex_2 {
+    position: relative;
+    z-index: -1;
+}
+
+#logoMainIndex_2 svg {
+    position: absolute;
+    right: -200px;
+}
+
+.agendaIndex {
+    margin: calc(var(--marginDesktop));
+}
+
+
+#imagesIndex {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: calc(var(--vh, 1h)*100);
+    overflow-x: hidden;
+}
+
+.imageIndex {
+    position: absolute;
+}
+
+.imageIndexVertical {
+    width: calc(150px + 5vw);
+}
+
+.imageIndexHorizontal {
+    height: calc(120px + 5vw);
+}
+
+#imageIndex1 {
+    left: 7%;
+    top: 45%;
+}
+
+#imageIndex2 {
+    left: 45%;
+    bottom: 10%;
+}
+
+#imageIndex3 {
+    right: 20%;
+    top: 50%;
+}
+
+#imageIndex4 {
+    right: 10%;
+    top: 5%;
+}
+
+#imageIndex5 {
+    left: calc(-40% - 10%);
+    ;
+    bottom: 40%;
+}
+
+#imageIndex6 {
+    left: calc(-30% - 90%);
+    ;
+    top: 20%;
+}
+
+#imageIndex7 {
+    left: calc(-60% - 120%);
+    ;
+    top: 15%;
+}
+
+#imageIndex8 {
+    left: calc(-80% - 40%);
+    ;
+    bottom: 15%;
+}
+
+#imageIndex9 {
+    right: calc(-75% - 10%);
+    ;
+    top: 5%;
+}
+
+#imageIndex10 {
+    right: calc(-60% - 90%);
+    top: 55%;
+}
+
+#imageIndex11 {
+    right: calc(-40% - 120%);
+    top: 5%;
+}
+
+#imageIndex12 {
+    right: calc(-30% - 40%);
+    bottom: 10%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    gap: var(--marginDesktop);
+    padding: var(--marginDesktop);
+}
+
+footer p {
+    margin-top: 1px;
+}
+
+.moveRight,
+.moveLeft {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.moveRight {
+    left: 0;
+}
+
+.moveLeft {
+    right: 0;
+}
+
+#cursor {
+    position: fixed;
+    background-color: var(--black);
+
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#cursor.active {
+    width: 6em;
+    height: 6em;
+}
+
+.hiddenDesktop{
+    display: none;
+}
+
+.hiddenMobile{
+    display: block;
+}
+
+.logoInfo{
+    position: relative;
+}
+
+.logoInfo span{
+    position: absolute;
+    bottom: 45%;
+    right: 10%;
+}
+
+
+
+/*Agenda*/
+.main{
+    margin-top: 20vh;
+    width: calc(100vw - var(--marginDesktop)* 2);
+    padding: 0 var(--marginDesktop);
+}
+#arrowDown{
+    width: 10px;
+    fill: none;
+    stroke: #000;
+    stroke-width: .8px;
+}
+
+.filter{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+}
+
+
+
+.monthSep {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--marginDesktop);
+    justify-content: space-between;
+}
+
+.monthSep > .gridElement:nth-last-child(n+2) {
+    justify-content: space-between;
+}
+
+.monthSep > .gridElement:nth-last-child(-n+1) {
+    justify-content: flex-start;
+}
+
+.gridInfo hr{
+    margin-top: calc(var(--marginDesktop)/2);
+    margin-bottom: calc(var(--marginDesktop)/2);
+}
+
+.gridPhoto{
+height: 35vh;
+}
+
+.gridInfo h2{
+    text-transform: uppercase;
+}
+
+.gridPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gridElement{
+    width: calc(33% - var(--marginDesktop));
+}
+
+.agendaMode{
+    width:10%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.agendaMode .selected {
+    font-weight: 700;
+    position: relative; 
+}
+
+.agendaMode .selected::before {
+    content: '';
+    position: absolute;
+    top: -2px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px; 
+    height: 5px; 
+    background-color: black;
+    border-radius: 50%;
+}
+
+.agendaMode .selected{
+    font-weight: 700;
+}
+
+
+@media (orientation: portrait) {
+    p {
+        font-size: calc(10px + 0.390625vw);
+    }
+    
+    span {
+        font-size: calc(18px + 0.390625vw);
+    }
+
+    .hiddenMobile{
+    display: none;
+    }
+
+    .hiddenDesktop{
+        display: block;
+    }
+    
+    /*Index*/
+
+    #logoMainIndex_1,
+    #logoMainIndex_2 {
+        height: calc(var(--vh, 1h)* 43);
+    }
+
+    #indexGeneral span {
+        text-align: center;
+    }
+#bilheteiraOnline{
+    margin-top: 1vw;
+}
+
+    .agendaIndex {
+        margin: var(--marginDesktop);
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logoMainIndex_2 {
+        position: relative;
+    }
+
+    #logoMainIndex_2 svg {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    footer {
+        position: initial;
+        display: flex;
+        gap: var(--marginMobile);
+        padding: var(--marginMobile);
+    }
+
+    #mainIndexContent {
+        height: auto;
+        min-height: calc(var(--vh, 1h)*100);
+    }
+
+    .imageIndexVertical {
+        width: calc(100px + 5vw);
+    }
+
+    .imageIndexHorizontal {
+        height: calc(80px + 5vw);
+    }
+
+    #imageIndex1 {
+        left: 40%;
+        top: 5%;
+    }
+
+    #imageIndex2 {
+        left: -15%;
+        bottom: calc(var(--vh, 1h));
+    }
+
+    #imageIndex3 {
+        right: 10%;
+        top: 55%;
+    }
+
+    #imageIndex4 {
+        right: -20%;
+        top: 35%;
+    }
+
+    #imageIndex5 {
+        left: calc(-20% - 150%);
+        top: 50%;
+    }
+
+    #imageIndex6 {
+        left: calc(-40% - 350%);
+        top: 30%;
+    }
+
+    #imageIndex7 {
+        left: calc(-10% - 300%);
+        top: 30%;
+    }
+
+    #imageIndex8 {
+        left: calc(-10% - 250%);
+        bottom: calc(var(--vh, 1h));
+    }
+
+    #imageIndex9 {
+        right: calc(-55% - 150%);
+        top: 35%;
+    }
+
+    #imageIndex10 {
+        right: calc(-10% - 350%);
+        top: 10%;
+    }
+
+    #imageIndex11 {
+        right: calc(-30% - 300%);
+        top: 60%;
+    }
+
+    #imageIndex12 {
+        right: calc(-5% - 150%);
+        bottom: calc(var(--vh, 1h)*20);
+    }
+
+    #cursor {
+        display: none;
+    }
+}
