@@ -23,6 +23,11 @@ body {
     cursor: none;
 }
 
+@font-face {
+    font-family: TMLdisplay;
+    src: url(data/TMLDisplay-Regular.otf);
+  }
+
 a:hover {
     cursor: none;
 }
@@ -32,13 +37,41 @@ a {
     color: var(--grey);
 }
 
-footer p {
-    color: var(--grey);
+h1{
+    font-size: calc(70px + 0.390625vw);
+    font-family: "TMLdisplay";
+}
+
+h2{
+    font-size: calc(15px + 0.390625vw);
+}
+
+h3{
+    font-size: calc(6px + 0.390625vw);
+    font-weight: 500;
 }
 
 p {
     font-size: calc(8px + 0.390625vw);
 }
+
+
+footer p {
+    color: var(--grey);
+}
+
+.navHeader{
+    width: 10%;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+}
+
+.navHeader h2{
+    font-weight: 500;
+}
+
+.navHeader
 
 p::selection {
     color: var(--white);
@@ -77,16 +110,36 @@ span {
     width: 100vw;
 }
 
-.logoHeader {
-    height: 10vh;
+header{
     position: absolute;
     top: var(--marginDesktop);
     left: var(--marginDesktop);
+    width: calc(100vw - var(--marginDesktop)* 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoHeader {
+    height: 10vh;
+}
+
+#menuHeader{
+    height: 2vh;
+    fill: none;
+    stroke: #000;
 }
 
 .logoHeader svg {
     height: 100%;
 }
+
+.agendaHeader{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
 
 #bodyIndex {
     overflow-x: hidden;
@@ -266,6 +319,98 @@ footer p {
     bottom: 45%;
     right: 10%;
 }
+
+
+
+/*Agenda*/
+.main{
+    margin-top: 20vh;
+    width: calc(100vw - var(--marginDesktop)* 2);
+    padding: 0 var(--marginDesktop);
+}
+#arrowDown{
+    width: 10px;
+    fill: none;
+    stroke: #000;
+    stroke-width: .8px;
+}
+
+.filter{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+}
+
+
+
+.monthSep {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--marginDesktop);
+    justify-content: space-between;
+}
+
+.monthSep > .gridElement:nth-last-child(n+2) {
+    justify-content: space-between;
+}
+
+.monthSep > .gridElement:nth-last-child(-n+1) {
+    justify-content: flex-start;
+}
+
+.gridInfo hr{
+    margin-top: calc(var(--marginDesktop)/2);
+    margin-bottom: calc(var(--marginDesktop)/2);
+}
+
+.gridPhoto{
+height: 35vh;
+}
+
+.gridInfo h2{
+    text-transform: uppercase;
+}
+
+.gridPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gridElement{
+    width: calc(33% - var(--marginDesktop));
+}
+
+.agendaMode{
+    width:10%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.agendaMode .selected {
+    font-weight: 700;
+    position: relative; 
+}
+
+.agendaMode .selected::before {
+    content: '';
+    position: absolute;
+    top: -2px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px; 
+    height: 5px; 
+    background-color: black;
+    border-radius: 50%;
+}
+
+.agendaMode .selected{
+    font-weight: 700;
+}
+
+
 @media (orientation: portrait) {
     p {
         font-size: calc(10px + 0.390625vw);
