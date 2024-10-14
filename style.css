@@ -460,8 +460,9 @@ margin: calc(var(--marginDesktop)/2) 0;
 
 .titleList{
     text-transform: uppercase;
+    mix-blend-mode: difference; /* Inverte as cores em relação ao fundo */
+    color: white; /* Cor padrão para garantir visibilidade em fundos claros */
 }
-
 .categoryList{
     width: calc(8vw*2);
     display: flex;
