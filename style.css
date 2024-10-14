@@ -65,6 +65,7 @@ footer p {
     display: flex;
     gap: 3px;
     flex-direction: column;
+    z-index: 500;
 }
 
 .navHeader h2{
