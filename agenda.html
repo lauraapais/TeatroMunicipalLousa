@@ -32,118 +32,419 @@
             <div class="navHeader">
                 <hr>
                 <a href="agenda.html">
-                  <h2>O Teatro</h2>
+                    <h2>O Teatro</h2>
                 </a>
                 <hr>
                 <a href="agenda.html">
-                <h2>Agenda</h2>
-              </a>
+                    <h2>Agenda</h2>
+                </a>
                 <hr>
-              </div>
+            </div>
         </header>
-  
+
         <main class="main">
             <div class="agenda">
                 <div class="agendaHeader">
                     <div class="filter hover-link">
-                        <h3>Ver Tudo</h3>
-                        <svg id="arrowDown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.54 5.72">
-                            <g data-name="Layer_1">
-                                <path class="cls-1" d="M.27.3l5.32,4.88L11.28.3" />
-                            </g>
-                        </svg>
+                        <div id="filterButton">
+                            <h3>Ver Tudo</h3>
+                            <svg id="arrowDown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.54 5.72">
+                                <g data-name="Layer_1">
+                                    <path class="cls-1" d="M.27.3l5.32,4.88L11.28.3" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div id="filterDropdown">
+                            <h3>Atividades de Família</h3>
+                            <h3>Cinema de Turismo</h3>
+                            <h3>Comédia</h3>
+                            <h3>Contos</h3>
+                            <h3>Dança</h3>
+                            <h3>Marionetas</h3>
+                            <h3>Música</h3>
+                            <h3>Stand-up comedy</h3>
+                            <h3>Teatro</h3>
+                        </div>
                     </div>
                     <div class="agendaMode">
-                        <h3 class="selected">Grelha</h3>
-                        <h3>Lista</h3>
+                        <h3 id="grid" class="selected">Grelha</h3>
+                        <h3 id="list">Lista</h3>
                     </div>
                 </div>
                 <div>
                 </div>
 
-                <div class="gridMode">
+                <div id="gridMode" c lass="gridMode">
+                    <div class="month">
+                        <h1>OUT '24</h1>
+                        <div class="monthSep">
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/sergioGodinho.jpg">
+                                </div>
 
-                    <h1>OUT '24</h1>
-                    <div class="monthSep">
-                        <div class="gridElement">
-                            <div class="gridPhoto">
-                                <img src="data/imagens/web/3irmaos.jpg">
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>21:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sex. 04-10-24</h2>
+                                    <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+
+                                </div>
                             </div>
 
-                            <div class="gridInfo">
-                                <hr>
-                                <h3>Música</h3>
-                                <h3>Sex. 04-10-24 21:30</h3>
-                                <hr>
-                                <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/helderBruno.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>21:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sáb. 05-10-24</h2>
+                                    <h2>HÉLDER BRUNO ESCULTURAS EM ÉTER</h2>
+                                </div>
+                            </div>
+
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/surma.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>23:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sáb. 05-10-24</h2>
+                                    <h2>SURMA DJ SET</h2>
+                                </div>
+                            </div>
+
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/ninho7.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>10:30</h3>
+                                        <h3>Marionetas</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Dom. 06-10-24</h2>
+                                    <h2>NINHO</h2>
+                                </div>
+                            </div>
+
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/ninho7.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>15:30</h3>
+                                        <h3>Marionetas</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Dom. 06-10-24</h2>
+                                    <h2>NINHO</h2>
+                                </div>
+                            </div>
+
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/godot.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>21:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sex. 04-10-24</h2>
+                                    <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="month">
+                        <h1>NOV '24</h1>
+                        <div class="monthSep">
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/sergioGodinho.jpg">
+                                </div>
 
-                        <div class="gridElement">
-                            <div class="gridPhoto">
-                                <img src="data/imagens/web/camaneMarioLaginha.jpg">
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>21:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sex. 04-10-24</h2>
+                                    <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+
+                                </div>
                             </div>
 
-                            <div class="gridInfo">
-                                <hr>
-                                <h3>Música</h3>
-                                <h3>Sex. 04-10-24 21:30</h3>
-                                <hr>
-                                <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
-                            </div>
-                        </div>
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/helderBruno.jpg">
+                                </div>
 
-                        <div class="gridElement">
-                            <div class="gridPhoto">
-                                <img src="data/imagens/web/crente.jpg">
-                            </div>
-
-                            <div class="gridInfo">
-                                <hr>
-                                <h3>Música</h3>
-                                <h3>Sex. 04-10-24 21:30</h3>
-                                <hr>
-                                <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
-                            </div>
-                        </div>
-
-                        <div class="gridElement">
-                            <div class="gridPhoto">
-                                <img src="data/imagens/web/glennMiller.jpg">
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>21:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sáb. 05-10-24</h2>
+                                    <h2>HÉLDER BRUNO ESCULTURAS EM ÉTER</h2>
+                                </div>
                             </div>
 
-                            <div class="gridInfo">
-                                <hr>
-                                <h3>Música</h3>
-                                <h3>Sex. 04-10-24 21:30</h3>
-                                <hr>
-                                <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/surma.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>23:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sáb. 05-10-24</h2>
+                                    <h2>SURMA DJ SET</h2>
+                                </div>
                             </div>
-                        </div>
 
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/ninho7.jpg">
+                                </div>
 
-                        <div class="gridElement">
-                            <div class="gridPhoto">
-                                <img src="data/imagens/web/godot.jpg">
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>10:30</h3>
+                                        <h3>Marionetas</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Dom. 06-10-24</h2>
+                                    <h2>NINHO</h2>
+                                </div>
                             </div>
 
-                            <div class="gridInfo">
-                                <hr>
-                                <h3>Música</h3>
-                                <h3>Sex. 04-10-24 21:30</h3>
-                                <hr>
-                                <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/ninho7.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>15:30</h3>
+                                        <h3>Marionetas</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Dom. 06-10-24</h2>
+                                    <h2>NINHO</h2>
+                                </div>
+                            </div>
+
+                            <div class="gridElement">
+                                <div class="gridPhoto">
+                                    <img src="data/imagens/web/godot.jpg">
+                                </div>
+
+                                <div class="gridInfo">
+                                    <hr>
+                                    <div class="headerElement">
+                                        <h3>21:30</h3>
+                                        <h3>Música</h3>
+                                    </div>
+                                    <hr>
+                                    <h2>Sex. 04-10-24</h2>
+                                    <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div id="listMode" class="listMode">
+                    <div class="month">
+                        <h1>OUT '24</h1>
+                        <div class="monthSep">
+                            <hr>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="imageList"><img src="data/imagens/web/3irmaos.jpg"></div>
+                            </div>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="imageList"><img src="data/imagens/web/crente.jpg"></div>
+                            </div>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="imageList"><img src="data/imagens/web/helderBruno.jpg"></div>
+                            </div>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="month">
+                        <h1>NOV '24</h1>
+                        <div class="monthSep">
+                            <hr>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                               
+                            </div>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="gridElement">
+                                <div class="listElement">
+                                    <div class="infoList">
+                                        <h2>4-10-24 Sex.</h2>
+                                        <h2>21:30</h2>
+                                        <h2>Sala Principal</h2>
+                                    </div>
+                                    <div class="titleList">
+                                        <h2>Sérgio Godinho com Coletivo Filarmónico</h2>
+                                    </div>
+                                    <div class="categoryList">
+                                        <h2>Música</h2>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </main>
 
     </div>
 
     <div id="cursor"></div>
-    <script src="js//script.js"></script>
-    <script src="js//mobileHeight.js"></script>
+    <script src="js/interation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mobileHeight.js"></script>
     <script src="js/cursor.js"></script>
 </body>

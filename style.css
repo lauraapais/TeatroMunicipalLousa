@@ -26,7 +26,7 @@ body {
 @font-face {
     font-family: TMLdisplay;
     src: url(data/TMLDisplay-Regular.otf);
-  }
+}
 
 a:hover {
     cursor: none;
@@ -37,16 +37,18 @@ a {
     color: var(--grey);
 }
 
-h1{
+h1 {
     font-size: calc(70px + 0.390625vw);
     font-family: "TMLdisplay";
+    font-weight: 500;
 }
 
-h2{
-    font-size: calc(15px + 0.390625vw);
+h2 {
+    font-size: calc(10px + 0.390625vw);
+    font-weight: 500;
 }
 
-h3{
+h3 {
     font-size: calc(6px + 0.390625vw);
     font-weight: 500;
 }
@@ -60,7 +62,7 @@ footer p {
     color: var(--grey);
 }
 
-.navHeader{
+.navHeader {
     width: 10%;
     display: flex;
     gap: 3px;
@@ -68,11 +70,18 @@ footer p {
     z-index: 500;
 }
 
-.navHeader h2{
+.navHeader h2 {
     font-weight: 500;
 }
 
-.navHeader
+.navHeader a {
+    color: var(--black);
+}
+
+hr {
+    border: 0.5px solid var(--black);
+}
+
 
 p::selection {
     color: var(--white);
@@ -111,7 +120,7 @@ span {
     width: 100vw;
 }
 
-header{
+header {
     position: absolute;
     top: var(--marginDesktop);
     left: var(--marginDesktop);
@@ -125,7 +134,7 @@ header{
     height: 10vh;
 }
 
-#menuHeader{
+#menuHeader {
     height: 2vh;
     fill: none;
     stroke: #000;
@@ -135,7 +144,7 @@ header{
     height: 100%;
 }
 
-.agendaHeader{
+.agendaHeader {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -288,7 +297,6 @@ footer p {
 #cursor {
     position: fixed;
     background-color: var(--black);
-
     width: 2em;
     height: 2em;
     border-radius: 100%;
@@ -303,19 +311,19 @@ footer p {
     height: 6em;
 }
 
-.hiddenDesktop{
+.hiddenDesktop {
     display: none;
 }
 
-.hiddenMobile{
+.hiddenMobile {
     display: block;
 }
 
-.logoInfo{
+.logoInfo {
     position: relative;
 }
 
-.logoInfo span{
+.logoInfo span {
     position: absolute;
     bottom: 45%;
     right: 10%;
@@ -324,111 +332,175 @@ footer p {
 
 
 /*Agenda*/
-.main{
-    margin-top: 20vh;
+.main {
+    margin-top: 15vh;
     width: calc(100vw - var(--marginDesktop)* 2);
     padding: 0 var(--marginDesktop);
 }
-#arrowDown{
+
+#arrowDown {
     width: 10px;
     fill: none;
     stroke: #000;
     stroke-width: .8px;
 }
 
-.filter{
+#filterDropdown {
+margin: var(--marginDesktop) 0;
+display: none;
+}
+
+.listMode{
+    display: none;
+}
+
+#filterButton{
     display: flex;
     gap: 5px;
     align-items: baseline;
 }
+.month:first-child{
+    margin-top: 0; 
+}
+.month{
+    margin-top: calc(var(--marginDesktop)*3); 
+}
 
-
-
-.monthSep {
+#gridMode .monthSep {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--marginDesktop);
-    justify-content: space-between;
 }
 
-.monthSep > .gridElement:nth-last-child(n+2) {
-    justify-content: space-between;
-}
-
-.monthSep > .gridElement:nth-last-child(-n+1) {
-    justify-content: flex-start;
-}
-
-.gridInfo hr{
+.gridInfo hr {
     margin-top: calc(var(--marginDesktop)/2);
     margin-bottom: calc(var(--marginDesktop)/2);
 }
 
-.gridPhoto{
-height: 35vh;
+.gridPhoto {
+    height: 35vh;
 }
 
-.gridInfo h2{
+.gridInfo h2 {
     text-transform: uppercase;
 }
 
-.gridPhoto img{
+.gridPhoto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.gridElement{
-    width: calc(33% - var(--marginDesktop));
+#gridMode .gridElement {
+    width: calc(100% / 4 - var(--marginDesktop));
+    margin-bottom: 3vh;
+    margin-right: var(--marginDesktop);
 }
 
-.agendaMode{
-    width:10%;
+.agendaMode {
+    width: 10%;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
 
+.headerElement {
+    display: flex;
+    justify-content: space-between;
+}
+
 .agendaMode .selected {
     font-weight: 700;
-    position: relative; 
+    position: relative;
 }
 
 .agendaMode .selected::before {
     content: '';
     position: absolute;
-    top: -2px; 
+    top: -2px;
     left: 50%;
     transform: translateX(-50%);
-    width: 5px; 
-    height: 5px; 
+    width: 5px;
+    height: 5px;
     background-color: black;
     border-radius: 50%;
 }
 
-.agendaMode .selected{
+.agendaMode .selected {
     font-weight: 700;
 }
 
+#listMode .monthSep{
+ display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+#listMode .gridElement{
+    width:100%;
+    position:relative;
+}
+
+.listElement{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listElement div{
+margin: calc(var(--marginDesktop)/2) 0;
+}
+
+.infoList{
+    display: flex;
+}
+
+.infoList h2{
+    width: 8vw;
+}
+
+.titleList{
+    text-transform: uppercase;
+}
+
+.categoryList{
+    width: calc(8vw*2);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageList {
+    height: 20vw;
+    position: absolute;
+    top: calc(-10vw + 50%);
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+
+.imageList img{
+    height: 100%;
+}
 
 @media (orientation: portrait) {
     p {
         font-size: calc(10px + 0.390625vw);
     }
-    
+
     span {
         font-size: calc(18px + 0.390625vw);
     }
 
-    .hiddenMobile{
-    display: none;
+    .hiddenMobile {
+        display: none;
     }
 
-    .hiddenDesktop{
+    .hiddenDesktop {
         display: block;
     }
-    
+
     /*Index*/
 
     #logoMainIndex_1,
@@ -439,9 +511,10 @@ height: 35vh;
     #indexGeneral span {
         text-align: center;
     }
-#bilheteiraOnline{
-    margin-top: 1vw;
-}
+
+    #bilheteiraOnline {
+        margin-top: 1vw;
+    }
 
     .agendaIndex {
         margin: var(--marginDesktop);
