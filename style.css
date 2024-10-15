@@ -501,7 +501,7 @@ footer p {
 
 .titleList {
     text-transform: uppercase;
-    width: 30%;
+    width: 40%;
 }
 
 .categoryList {
@@ -515,7 +515,7 @@ footer p {
     height: 20vw;
     position: absolute;
     top: calc(-10vw + 50%);
-    left: 50%;
+    left: 65%;
     transform: translateX(-50%);
     pointer-events: none;
     z-index: -1;
