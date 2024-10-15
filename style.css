@@ -40,22 +40,22 @@ a {
 h1 {
     font-size: calc(70px + 0.390625vw);
     font-family: "TMLdisplay";
-    font-weight: 500;
 }
 
 h2 {
     font-size: calc(10px + 0.390625vw);
-    font-weight: 500;
     line-height: calc(15px + 0.390625vw);
+    font-weight: 400;
 }
 
 h3 {
     font-size: calc(8px + 0.390625vw);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p {
     font-size: calc(8px + 0.390625vw);
+    font-weight: 400;
 }
 
 
@@ -87,7 +87,6 @@ header {
 }
 
 .navHeader h3 {
-    font-weight: 500;
     margin: calc(var(--marginDesktop) / 8) 0;
     text-transform: uppercase;
 }
@@ -450,10 +449,6 @@ footer p {
     border-radius: 50%;
 }
 
-.agendaMode .selected {
-    font-weight: 700;
-}
-
 #listMode .monthSep {
     display: flex;
     flex-wrap: wrap;
@@ -477,7 +472,6 @@ footer p {
 .listElement h2{
     mix-blend-mode: difference;
     color: white;
-    font-weight: normal;
 }
 
 .infoList {
