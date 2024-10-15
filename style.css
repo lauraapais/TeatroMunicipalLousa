@@ -369,6 +369,9 @@ footer p {
     margin-top: calc(var(--marginDesktop)*3);
 }
 
+.titleGrid h2{
+    margin: 0.2vw 0;
+}
 #gridMode .monthSep {
     display: flex;
     flex-wrap: wrap;
