@@ -475,12 +475,14 @@ footer p {
     text-transform: uppercase;
     mix-blend-mode: difference;
     color: white;
+    width: 30%;
 }
 
 .categoryList {
     width: calc(8vw*2);
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
 }
 
 .imageList {
