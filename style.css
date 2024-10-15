@@ -537,7 +537,7 @@ footer p {
 
 
 /*Espetavulo*/
-.headerShow {
+.headerShow .logoHeader svg{
     fill: var(--white)!important;
 }
 
