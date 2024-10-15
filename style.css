@@ -5,7 +5,7 @@
 
     --headerHeight: calc(var(--vh, 1h)*10);
 
-    --marginDesktop: 2vh;
+    --marginDesktop: 2vw;
     --marginMobile: 4vw;
 }
 
@@ -71,9 +71,10 @@ footer p {
     z-index: 500;
 }
 
-.navHeader h2 {
+.navHeader h3 {
     font-weight: 500;
-    margin: calc(var(--marginDesktop)/4) 0;
+    margin: calc(var(--marginDesktop) / 8) 0;
+    text-transform: uppercase;
 }
 
 .navHeader a {
@@ -373,8 +374,7 @@ footer p {
 }
 
 .gridInfo hr {
-    margin-top: calc(var(--marginDesktop)/2);
-    margin-bottom: calc(var(--marginDesktop)/2);
+    margin: calc(var(--marginDesktop)/4) 0;
 }
 
 .gridPhoto {
@@ -452,7 +452,7 @@ footer p {
 }
 
 .listElement div {
-    margin: calc(var(--marginDesktop)/2) 0;
+    margin: calc(var(--marginDesktop)/3) 0;
 }
 
 .infoList {
