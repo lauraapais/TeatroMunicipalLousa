@@ -614,6 +614,7 @@ width:50%;
 
 .detailsShow{
     margin-bottom: calc(var(--marginDesktop) / 2);
+    text-transform: uppercase;
 }
 
 button{
@@ -621,8 +622,10 @@ button{
     padding: 10px;
     margin-top:calc(var(--marginDesktop) / 2);
     border: 1px solid black;
-    font-size: calc(8px + 0.390625vw);
+    font-size: calc(6px + 0.390625vw);
     font-weight: 400;
+    font-family: "area-normal", sans-serif;
+    text-transform: uppercase;
 }
 
 @media (orientation: portrait) {
