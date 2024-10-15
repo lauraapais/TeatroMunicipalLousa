@@ -46,6 +46,7 @@ h1 {
 h2 {
     font-size: calc(10px + 0.390625vw);
     font-weight: 500;
+    line-height: calc(15px + 0.390625vw);
 }
 
 h3 {
@@ -72,15 +73,13 @@ footer p {
 
 .navHeader h2 {
     font-weight: 500;
+    margin: calc(var(--marginDesktop)/4) 0;
 }
 
 .navHeader a {
     color: var(--black);
 }
 
-hr {
-    border: 0.5px solid var(--black);
-}
 
 
 p::selection {
@@ -346,24 +345,26 @@ footer p {
 }
 
 #filterDropdown {
-margin: var(--marginDesktop) 0;
-display: none;
-}
-
-.listMode{
+    margin: var(--marginDesktop) 0;
     display: none;
 }
 
-#filterButton{
+.listMode {
+    display: none;
+}
+
+#filterButton {
     display: flex;
     gap: 5px;
     align-items: baseline;
 }
-.month:first-child{
-    margin-top: 0; 
+
+.month:first-child {
+    margin-top: 0;
 }
-.month{
-    margin-top: calc(var(--marginDesktop)*3); 
+
+.month {
+    margin-top: calc(var(--marginDesktop)*3);
 }
 
 #gridMode .monthSep {
@@ -409,6 +410,10 @@ display: none;
     justify-content: space-between;
 }
 
+.headerElement h2{
+    margin: calc(var(--marginDesktop) / 4) 0;
+}
+
 .agendaMode .selected {
     font-weight: 700;
     position: relative;
@@ -430,40 +435,41 @@ display: none;
     font-weight: 700;
 }
 
-#listMode .monthSep{
- display: flex;
-flex-wrap: wrap;
-flex-direction: column;
+#listMode .monthSep {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-#listMode .gridElement{
-    width:100%;
-    position:relative;
+#listMode .gridElement {
+    width: 100%;
+    position: relative;
 }
 
-.listElement{
+.listElement {
     display: flex;
     justify-content: space-between;
 }
 
-.listElement div{
-margin: calc(var(--marginDesktop)/2) 0;
+.listElement div {
+    margin: calc(var(--marginDesktop)/2) 0;
 }
 
-.infoList{
+.infoList {
     display: flex;
 }
 
-.infoList h2{
+.infoList h2 {
     width: 8vw;
 }
 
-.titleList{
+.titleList {
     text-transform: uppercase;
-    mix-blend-mode: difference; /* Inverte as cores em relação ao fundo */
-    color: white; /* Cor padrão para garantir visibilidade em fundos claros */
+    mix-blend-mode: difference;
+    color: white;
 }
-.categoryList{
+
+.categoryList {
     width: calc(8vw*2);
     display: flex;
     justify-content: flex-end;
@@ -477,11 +483,11 @@ margin: calc(var(--marginDesktop)/2) 0;
     pointer-events: none;
     z-index: -1;
     opacity: 0;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
 
 
-.imageList img{
+.imageList img {
     height: 100%;
 }
 
