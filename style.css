@@ -63,6 +63,21 @@ footer p {
     color: var(--grey);
 }
 
+.headerIndex{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+header {
+    margin: var(--marginDesktop);
+    width: calc(100vw - var(--marginDesktop)* 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .navHeader {
     width: 10%;
     display: flex;
@@ -80,8 +95,6 @@ footer p {
 .navHeader a {
     color: var(--black);
 }
-
-
 
 p::selection {
     color: var(--white);
@@ -120,15 +133,7 @@ span {
     width: 100vw;
 }
 
-header {
-    position: absolute;
-    top: var(--marginDesktop);
-    left: var(--marginDesktop);
-    width: calc(100vw - var(--marginDesktop)* 2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .logoHeader {
     height: 10vh;
@@ -267,10 +272,12 @@ header {
     bottom: 10%;
 }
 
-footer {
+.footerIndex{
     position: absolute;
     bottom: 0;
+}
 
+footer {
     display: flex;
     gap: var(--marginDesktop);
     padding: var(--marginDesktop);
@@ -334,7 +341,7 @@ footer p {
 
 /*Agenda*/
 .main {
-    margin-top: 20vh;
+    margin-top:5vh;
     width: calc(100vw - var(--marginDesktop)* 2);
     padding: 0 var(--marginDesktop);
 }
@@ -404,6 +411,10 @@ footer p {
     width: calc(100% / 4 - var(--marginDesktop));
     margin-bottom: 3vh;
     margin-right: var(--marginDesktop);
+}
+
+.gridElement:nth-of-type(4n) {
+    margin-right: 0;
 }
 
 .agendaMode {
