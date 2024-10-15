@@ -96,27 +96,27 @@ header {
 }
 
 p::selection {
-    color: var(--white);
+    color: var(--white)!important;
     background-color: var(--grey);
 }
 
 h1::selection {
-    color: var(--white);
+    color: var(--white)!important;
     background-color: var(--grey);
 }
 
 h2::selection {
-    color: var(--white);
+    color: var(--white)!important;
     background-color: var(--grey);
 }
 
 h3::selection {
-    color: var(--white);
+    color: var(--white)!important;
     background-color: var(--grey);
 }
 
 a::selection {
-    color: var(--white);
+    color: var(--white)!important;
     background-color: var(--grey);
 }
 
