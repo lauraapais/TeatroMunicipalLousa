@@ -471,6 +471,7 @@ footer p {
     height: 5px;
     background-color: black;
     border-radius: 50%;
+    display: none;
 }
 
 #listMode .monthSep {
