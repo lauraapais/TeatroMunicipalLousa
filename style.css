@@ -40,6 +40,7 @@ a {
 h1 {
     font-size: calc(70px + 0.390625vw);
     font-family: "TMLdisplay";
+    line-height: calc(75px + 0.390625vw);
 }
 
 h2 {
@@ -56,6 +57,7 @@ h3 {
 p {
     font-size: calc(8px + 0.390625vw);
     font-weight: 400;
+    text-wrap: pretty;
 }
 
 
@@ -325,7 +327,6 @@ footer p {
     pointer-events: none;
     transition: width .2s ease-in-out, height .2s ease-in-out;
     transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
 #cursor.active {
@@ -355,9 +356,12 @@ footer p {
 
 /*Agenda*/
 .main {
-    margin-top:5vh;
     width: calc(100vw - var(--marginDesktop)* 2);
     padding: 0 var(--marginDesktop);
+}
+
+.agenda{
+    margin-top:5vh;
 }
 
 #arrowDown {
@@ -392,6 +396,10 @@ footer p {
 
 .month {
     margin-top: calc(var(--marginDesktop)*3);
+}
+
+.month h1{
+    margin-bottom: calc(var(--marginDesktop)/4);
 }
 
 .titleGrid h2{
@@ -515,8 +523,6 @@ footer p {
     height: 20vw;
     position: absolute;
     top: calc(-10vw + 50%);
-    left: 65%;
-    transform: translateX(-50%);
     pointer-events: none;
     z-index: -1;
     opacity: 0;
@@ -526,6 +532,95 @@ footer p {
 
 .imageList img {
     height: 100%;
+}
+
+
+/*Espetavulo*/
+.headerShow {
+    fill: var(--white)!important;
+}
+
+.headerShow .navHeader h3{
+color: var(--white)!important;
+}
+
+.coverShow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.coverShow .imageShow{
+    width:100%;
+    height: 100%;
+}
+
+.coverShow .imageShow img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.coverHeader h2{
+    color: white!important;
+}
+
+.coverShowInfo{
+    min-height: calc(100vh - 10vh - var(--marginDesktop)*2);
+}
+
+.coverShowInfo h1{
+    color: white!important;
+    font-weight: 500;
+}
+
+.coverShowInfo h1{
+    position: absolute;
+    bottom: calc(var(--marginDesktop) / 2);
+}
+
+.coverHeaderContent{
+display: flex;
+margin: calc(var(--marginDesktop) / 3) 0;
+justify-content: space-between;
+}
+
+.lateralInfo{
+width:20%;
+}
+
+.lateralInfoInfo{
+    margin: calc(var(--marginDesktop) / 2) 0;
+}
+
+.mainInfo{
+width:50%;
+}
+
+.infoShow{
+    display: flex;
+    gap: 10%;
+    margin-top: var(--marginDesktop);
+}
+
+.detailsShow{
+    margin-bottom: calc(var(--marginDesktop) / 2);
+}
+
+button{
+    background-color: var(--white);
+    padding: 10px;
+    margin-top:calc(var(--marginDesktop) / 2);
+    border: 1px solid black;
+    font-size: calc(8px + 0.390625vw);
+    font-weight: 400;
 }
 
 @media (orientation: portrait) {
@@ -545,8 +640,8 @@ footer p {
         display: block;
     }
 
-    /*Index*/
 
+    /*Index*/
     #logoMainIndex_1,
     #logoMainIndex_2 {
         height: calc(var(--vh, 1h)* 43);

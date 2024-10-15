@@ -59,6 +59,9 @@ gridElements.forEach((element) => {
         });
 
         listElement.addEventListener('mousemove', (event) => {
+            const mouseX = event.clientX;
+            const imageWidth = imageElement.offsetWidth;
+            imageElement.style.left = `${mouseX - imageWidth / 2}px`;
         });
     }
 });
