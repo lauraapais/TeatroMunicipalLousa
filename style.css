@@ -347,8 +347,9 @@ footer p {
 }
 
 #filterDropdown {
-    margin: var(--marginDesktop) 0;
+    margin: calc(var(--marginDesktop)/4) 0;
     display: none;
+    text-transform: none;
 }
 
 .listMode {
