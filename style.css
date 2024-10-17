@@ -1,6 +1,6 @@
 :root {
     --white: #FFFFFF;
-    --grey: #707070;
+    --grey: rgb(112, 112, 112);
     --black: #000;
     --green: #849F85;
 
@@ -33,9 +33,14 @@ a:hover {
     cursor: none;
 }
 
-a {
+footer a {
     text-decoration: none;
     color: var(--grey);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
 }
 
 h1 {
@@ -62,15 +67,16 @@ p {
     text-wrap: pretty;
 }
 
-hr{
-    border:none;
+hr {
+    border: none;
     border-top: 0.5px solid var(--black);
+    transition: transform 0.3s ease;
+    transform: scaleY(1);
 }
 
-.enterHr:hover hr{
-    border-top: 1px solid var(--black);
+.enterHr:hover hr {
+    transform: scaleY(2); 
 }
-
 
 footer p {
     color: var(--grey);
@@ -465,20 +471,36 @@ footer p {
     gap: 20px;
 }
 
-.agendaMode h3:hover {
-    font-weight: 700;
+.agendaMode h3 {
+    font-weight: 400;
+    transition: transform 0.3s ease;
 }
 
+.agendaMode h3:hover {
+    font-weight: 700;
+    transform: scale(1.01); 
+}
+
+#filterButton h3{
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
 #filterButton:hover>h3 {
     font-weight: 700;
+    transform: scale(1.01); 
 }
 
 #filterButton:hover>svg {
     stroke-width: 2px;
 }
 
+#filterDropdown h3{
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
 #filterDropdown h3:hover {
-    font-weight: 700;
+   font-weight: 700;
+    transform: scale(1.01); 
 }
 
 .headerElement {
@@ -590,8 +612,14 @@ footer p {
     color: var(--white) !important;
 }
 
+.navHeader h3{
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
 .navHeader h3:hover{
-    font-weight: 700;
+   font-weight: 700;
+    transform: scale(1.01); 
 }
 
 .selected{
@@ -667,7 +695,6 @@ footer p {
     margin-bottom: calc(var(--marginDesktop) / 2);
     text-transform: uppercase;
 }
-
 button {
     background-color: var(--white);
     padding: 10px;
@@ -677,8 +704,12 @@ button {
     font-weight: 400;
     font-family: "area-normal", sans-serif;
     text-transform: uppercase;
+    transition: box-shadow 0.3s ease; /* Adiciona a transição suave */
 }
 
+button:hover {
+    box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
+}
 span {
     font-family: 'TMLdisplay';
     text-transform: uppercase;
@@ -833,6 +864,10 @@ span {
 
 #moreInfoContent {
     max-height: 0;
+}
+
+.enterHr{
+    margin: calc(var(--marginDesktop) / 4) 0;
 }
 
 @media (orientation: portrait) {
