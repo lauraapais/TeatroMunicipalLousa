@@ -827,15 +827,13 @@ span {
     margin-bottom: calc(var(--marginDesktop) / 6);
 }
 
-#moreInfoContent{
-    display: none;
-}
-
 #moreInfoContent p{
     width: 50%;
 }
 
-
+#moreInfoContent {
+    max-height: 0;
+}
 
 @media (orientation: portrait) {
     p {
