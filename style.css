@@ -657,8 +657,8 @@ span {
     font-family: 'TMLdisplay';
     text-transform: uppercase;
     color: var(--black) !important;
-    font-size: calc(200px + 0.390625vw);
-    line-height: calc(200px + 0.390625vw);
+    font-size: calc(500px + 0.390625vw);
+    line-height: calc(500px + 0.390625vw);
     ;
 }
 
@@ -667,14 +667,32 @@ span {
     white-space: nowrap;
     box-sizing: border-box;
     position: relative;
-    z-index: 2;
-    display: none;
+    display: flex;
+    align-items: flex-end;
 }
 
 .rollingText span {
     display: inline-block;
-    animation: rollingText 20s linear infinite;
+    animation: rollingText 45s linear infinite;
+    /* Duplicamos o conteúdo com :after para garantir a continuidade */
 }
+
+.rollingText span::after {
+    content: attr(data-text); /* Duplica o texto */
+    padding-left: 20px; /* Espaçamento entre os textos duplicados */
+}
+
+@keyframes rollingText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 .aboutImages img {
     width: 100%;
@@ -686,6 +704,12 @@ span {
     height: calc(var(--vh, 1h)* 100 - var(--marginDesktop)* 2 - 10vh);
     width: 100vw;
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutLanding svg{
+    height: calc(100vh - 10vh - var(--marginDesktop)* 3);
 }
 
 #imgAbout1 {
@@ -695,6 +719,7 @@ span {
     position: absolute;
     right: 50%;
     bottom: 5%;
+    z-index: -1;
 }
 
 #imgAbout2 {
@@ -710,8 +735,9 @@ span {
     width: 20vw;
     height: 25vw;
     position: absolute;
-    top: 0;
+    top: 2%;
     left: 5%;
+    z-index: -1;
 }
 
 .aboutDiv {
@@ -766,15 +792,6 @@ span {
     margin-top: calc(var(--marginDesktop) / 6);
 }
 
-@keyframes rollingText {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 @media (orientation: portrait) {
     p {
