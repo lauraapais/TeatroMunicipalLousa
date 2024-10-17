@@ -2,6 +2,7 @@
     --white: #FFFFFF;
     --grey: #707070;
     --black: #000;
+    --green: #849F85;
 
     --headerHeight: calc(var(--vh, 1h)*10);
 
@@ -66,10 +67,10 @@ footer p {
     color: var(--grey);
 }
 
-.headerIndex{
+.headerIndex {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
 }
 
 header {
@@ -99,28 +100,28 @@ header {
 }
 
 p::selection {
-    color: var(--white)!important;
-    background-color: var(--grey);
+    color: var(--white) !important;
+    background-color: var(--green);
 }
 
 h1::selection {
-    color: var(--white)!important;
-    background-color: var(--grey);
+    color: var(--white) !important;
+    background-color: var(--green);
 }
 
 h2::selection {
-    color: var(--white)!important;
-    background-color: var(--grey);
+    color: var(--white) !important;
+    background-color: var(--green);
 }
 
 h3::selection {
-    color: var(--white)!important;
-    background-color: var(--grey);
+    color: var(--white) !important;
+    background-color: var(--green);
 }
 
 a::selection {
-    color: var(--white)!important;
-    background-color: var(--grey);
+    color: var(--white) !important;
+    background-color: var(--green);
 }
 
 span {
@@ -149,6 +150,7 @@ span {
     height: calc(var(--vh, 1h)*100);
     width: 100vw;
 }
+
 
 
 
@@ -289,7 +291,7 @@ span {
     bottom: 10%;
 }
 
-.footerIndex{
+.footerIndex {
     position: absolute;
     bottom: 0;
 }
@@ -319,12 +321,14 @@ footer p {
     right: 0;
 }
 
+
 #cursor {
     position: fixed;
-    background-color: var(--black);
+    background-color: #D7D6D4;
     width: 2em;
     height: 2em;
     border-radius: 100%;
+    mix-blend-mode: multiply;
     pointer-events: none;
     transition: width .2s ease-in-out, height .2s ease-in-out;
     transform: translate(-50%, -50%);
@@ -333,6 +337,10 @@ footer p {
 #cursor.active {
     width: 6em;
     height: 6em;
+}
+
+.link-container {
+    position: relative;
 }
 
 .hiddenDesktop {
@@ -361,8 +369,8 @@ footer p {
     padding: 0 var(--marginDesktop);
 }
 
-.agenda{
-    margin-top:5vh;
+.agenda {
+    margin-top: 5vh;
 }
 
 #arrowDown {
@@ -377,7 +385,7 @@ footer p {
     display: none;
 }
 
-#filterDropdown h3{
+#filterDropdown h3 {
     margin-bottom: 5px;
 }
 
@@ -399,13 +407,14 @@ footer p {
     margin-top: calc(var(--marginDesktop)*3);
 }
 
-.month h1{
+.month h1 {
     margin-bottom: calc(var(--marginDesktop)/4);
 }
 
-.titleGrid h2{
+.titleGrid h2 {
     margin: 0.2vw 0;
 }
+
 #gridMode .monthSep {
     display: flex;
     flex-wrap: wrap;
@@ -447,12 +456,28 @@ footer p {
     gap: 20px;
 }
 
+.agendaMode h3:hover {
+    font-weight: 700;
+}
+
+#filterButton:hover>h3 {
+    font-weight: 700;
+}
+
+#filterButton:hover>svg {
+    stroke-width: 2px;
+}
+
+#filterDropdown h3:hover {
+    font-weight: 700;
+}
+
 .headerElement {
     display: flex;
     justify-content: space-between;
 }
 
-.headerElement h2{
+.headerElement h2 {
     margin: calc(var(--marginDesktop) / 4) 0;
 }
 
@@ -496,7 +521,7 @@ footer p {
 
 
 
-.titleList h2{
+.titleList h2 {
     mix-blend-mode: difference;
     color: white;
 }
@@ -538,15 +563,15 @@ footer p {
 
 
 /*Espetavulo*/
-.headerShow .logoHeader svg{
-    fill: var(--white)!important;
+.headerShow .logoHeader svg {
+    fill: var(--white) !important;
 }
 
-.headerShow .navHeader h3{
-color: var(--white)!important;
+.headerShow .navHeader h3 {
+    color: var(--white) !important;
 }
 
-.coverShow{
+.coverShow {
     position: absolute;
     top: 0;
     left: 0;
@@ -557,75 +582,198 @@ color: var(--white)!important;
     height: 100vh;
 }
 
-.coverShow .imageShow{
-    width:100%;
+.coverShow .imageShow {
+    width: 100%;
     height: 100%;
 }
 
-.coverShow .imageShow img{
-    width:100%;
+.coverShow .imageShow img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    
+
 }
 
-.coverHeader h2{
-    color: white!important;
+.coverHeader h2 {
+    color: white !important;
 }
 
-.coverShowInfo{
+.coverShowInfo {
     min-height: calc(100vh - 10vh - var(--marginDesktop)*2);
 }
 
-.coverShowInfo h1{
-    color: white!important;
+.coverShowInfo h1 {
+    color: white !important;
     font-weight: 500;
 }
 
-.coverShowInfo h1{
+.coverShowInfo h1 {
     position: absolute;
     bottom: calc(var(--marginDesktop) / 2);
 }
 
-.coverHeaderContent{
-display: flex;
-margin: calc(var(--marginDesktop) / 3) 0;
-justify-content: space-between;
+.coverHeaderContent {
+    display: flex;
+    margin: calc(var(--marginDesktop) / 3) 0;
+    justify-content: space-between;
 }
 
-.lateralInfo{
-width:20%;
+.lateralInfo {
+    width: 20%;
 }
 
-.lateralInfoInfo{
+.lateralInfoInfo {
     margin: calc(var(--marginDesktop) / 2) 0;
 }
 
-.mainInfo{
-width:50%;
+.mainInfo {
+    width: 50%;
 }
 
-.infoShow{
+.infoShow {
     display: flex;
     gap: 10%;
     margin-top: var(--marginDesktop);
 }
 
-.detailsShow{
+.detailsShow {
     margin-bottom: calc(var(--marginDesktop) / 2);
     text-transform: uppercase;
 }
 
-button{
+button {
     background-color: var(--white);
     padding: 10px;
-    margin-top:calc(var(--marginDesktop) / 2);
+    margin-top: calc(var(--marginDesktop) / 2);
     border: 1px solid black;
     font-size: calc(6px + 0.390625vw);
     font-weight: 400;
     font-family: "area-normal", sans-serif;
     text-transform: uppercase;
+}
+
+span {
+    font-family: 'TMLdisplay';
+    text-transform: uppercase;
+    color: var(--black) !important;
+    font-size: calc(200px + 0.390625vw);
+    line-height: calc(200px + 0.390625vw);
+    ;
+}
+
+.rollingText {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.rollingText span {
+    display: inline-block;
+    animation: rollingText 20s linear infinite;
+}
+
+.aboutImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutLanding {
+    height: calc(var(--vh, 1h)* 100 - var(--marginDesktop)* 2 - 10vh);
+    width: 100vw;
+    position: relative;
+}
+
+#imgAbout1 {
+    width: 15vw;
+    height: 20vw;
+    position: absolute;
+    position: absolute;
+    right: 50%;
+    bottom: 5%;
+}
+
+#imgAbout2 {
+    width: 20vw;
+    height: 25vw;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+
+}
+
+#imgAbout3 {
+    width: 20vw;
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.aboutDiv {
+    display: flex;
+    margin: var(--marginDesktop);
+    gap: calc(var(--marginDesktop)*3);
+}
+
+.aboutText {
+    width: 50%;
+}
+
+.aboutInfo {
+    width: 30%;
+}
+
+.aboutText p {
+    font-size: calc(13px + 0.390625vw);
+    line-height: calc(22px + 0.390625vw);
+    font-weight: 900;
+    text-wrap: pretty;
+}
+
+.aboutInfo p{
+    margin: calc(var(--marginDesktop)/4) 0;
+}
+
+.aboutInfoTitle{
+ text-transform: uppercase;
+ font-weight: 900;
+}
+
+.aboutTextTitle{
+    text-transform: uppercase;
+    margin-bottom: calc(var(--marginDesktop)/4);
+}
+
+.teamTitle{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.teamTitleSub{
+    font-weight: 900;
+}
+
+.teamDiv{
+    margin: 0 var(--marginDesktop);
+}
+
+.teamMember{
+    margin-top: calc(var(--marginDesktop) / 6);
+}
+
+@keyframes rollingText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @media (orientation: portrait) {

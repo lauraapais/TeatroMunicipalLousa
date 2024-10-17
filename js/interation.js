@@ -65,3 +65,4 @@ gridElements.forEach((element) => {
         });
     }
 });
+
