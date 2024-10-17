@@ -658,8 +658,7 @@ span {
     text-transform: uppercase;
     color: var(--black) !important;
     font-size: calc(500px + 0.390625vw);
-    line-height: calc(500px + 0.390625vw);
-    ;
+    line-height: calc(490px + 0.390625vw);
 }
 
 .rollingText {
@@ -673,13 +672,7 @@ span {
 
 .rollingText span {
     display: inline-block;
-    animation: rollingText 45s linear infinite;
-    /* Duplicamos o conteúdo com :after para garantir a continuidade */
-}
-
-.rollingText span::after {
-    content: attr(data-text); /* Duplica o texto */
-    padding-left: 20px; /* Espaçamento entre os textos duplicados */
+    animation: rollingText 30s linear infinite;
 }
 
 @keyframes rollingText {
@@ -691,8 +684,6 @@ span {
         transform: translateX(-100%);
     }
 }
-
-
 
 .aboutImages img {
     width: 100%;
