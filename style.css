@@ -575,6 +575,13 @@ footer p {
     color: var(--white) !important;
 }
 
+.navHeader h3:hover{
+    font-weight: 700;
+}
+
+.selected{
+    font-weight: 700;
+}
 .coverShow {
     position: absolute;
     top: 0;
