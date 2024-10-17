@@ -538,6 +538,7 @@ footer p {
 #listMode .gridElement {
     width: 100%;
     position: relative;
+    transition: box-shadow 0.3s ease; /* Adiciona a transição suave */
 }
 
 .listElement {
@@ -599,6 +600,16 @@ footer p {
     font-weight: bold;
     transform: scale(1.01); 
 }
+
+.gridElement:hover h3{
+    font-weight: bold;
+    transform: scale(1.01); 
+}
+
+#gridMode .gridElement img:hover{
+    box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
+}
+
 
 
 /*Espetaculo*/
