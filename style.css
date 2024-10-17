@@ -790,10 +790,21 @@ span {
 .teamTitle{
     text-transform: uppercase;
     font-weight: bold;
+    margin: calc(var(--marginDesktop) / 4) 0;
 }
 
 .subTitleAbout{
+    text-transform: uppercase;
     font-weight: bold;
+}
+
+.aboutInfoTitle{
+    margin: calc(var(--marginDesktop) / 6) 0;
+}
+
+.aboutInfoTitleSub{
+    font-weight: bold;
+    margin: calc(var(--marginDesktop) / 6) 0;
 }
 
 .teamDiv{
@@ -804,6 +815,14 @@ span {
 }
 .teamMember{
     margin-top: calc(var(--marginDesktop) / 6);
+}
+
+.moreInfoElement{
+    margin-bottom: calc(var(--marginDesktop) / 6);
+}
+
+#moreInfoContent{
+    display: none;
 }
 
 
