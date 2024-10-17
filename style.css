@@ -19,7 +19,6 @@
 body {
     background-color: var(--white);
     font-family: "area-normal", sans-serif;
-    font-weight: 400;
     font-style: normal;
     cursor: none;
 }
@@ -552,7 +551,7 @@ footer p {
 
 
 
-.titleList h2 {
+.listElement h2 {
     mix-blend-mode: difference;
     color: var(--white);
 }
@@ -590,6 +589,15 @@ footer p {
 
 .imageList img {
     height: 100%;
+}
+
+.gridElement:hover hr{
+    transform: scaleY(2);
+}
+
+.gridElement:hover h2{
+    font-weight: bold;
+    transform: scale(1.01); 
 }
 
 
