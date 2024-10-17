@@ -566,7 +566,17 @@ footer p {
 
 /*Espetavulo*/
 .headerShow .logoHeader svg {
-    fill: var(--white) !important;
+   fill: var(--white);
+}
+
+.headerShow  hr{
+    border:none;
+    border-top: 0.5px solid var(--white)!important;
+}
+
+.coverHeader hr{
+    border:none;
+    border-top: 0.5px solid var(--white)!important;
 }
 
 .headerShow .navHeader h3 {
@@ -777,17 +787,19 @@ span {
 
 .teamTitle{
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bold;
 }
 
-.teamTitleSub{
-    font-weight: 900;
+.subTitleAbout{
+    font-weight: bold;
 }
 
 .teamDiv{
+    margin: calc(var(--marginDesktop) / 2) 0;
+}
+.moreInfo{
     margin: 0 var(--marginDesktop);
 }
-
 .teamMember{
     margin-top: calc(var(--marginDesktop) / 6);
 }
