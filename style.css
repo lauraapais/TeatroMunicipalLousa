@@ -676,7 +676,7 @@ span {
 
 .rollingText span {
     display: inline-block;
-    animation: rollingText 30s linear infinite;
+    animation: rollingText 60s linear infinite;
 }
 
 @keyframes rollingText {
