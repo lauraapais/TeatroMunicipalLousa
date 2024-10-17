@@ -526,6 +526,8 @@ footer p {
 
 
 .titleList h2 {
+    mix-blend-mode: difference;
+    color: var(--white);
 }
 
 .infoList {
