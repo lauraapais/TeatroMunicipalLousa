@@ -43,9 +43,9 @@ a {
 }
 
 h1 {
-    font-size: calc(70px + 0.390625vw);
+    font-size: calc(90px + 0.390625vw);
     font-family: "TMLdisplay";
-    line-height: calc(75px + 0.390625vw);
+    line-height: calc(95px + 0.390625vw);
 }
 
 h2 {
@@ -558,6 +558,8 @@ footer p {
     mix-blend-mode: difference;
     color: var(--white);
 }
+
+
 
 #listMode  .gridElement:hover h2 {
     transform: scale(1.02); 
