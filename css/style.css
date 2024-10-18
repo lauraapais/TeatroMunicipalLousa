@@ -423,11 +423,7 @@ footer p {
 
 .titleGrid h2 {
     margin: 0.2vw 0;
-}
-
-#gridMode .monthSep {
-    display: flex;
-    flex-wrap: wrap;
+    font-weight: 700;
 }
 
 .gridInfo hr {
@@ -449,10 +445,15 @@ footer p {
     object-position: center;
 }
 
+#gridMode .monthSep {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: calc(var(--marginDesktop)/2);
+}
+
 #gridMode .gridElement {
-    width: calc(100% / 4 - var(--marginDesktop));
-    margin-bottom: 3vh;
-    margin-right: var(--marginDesktop);
+    width: 100%; /* O width será controlado pelo grid */
+    margin: 0; /* Remove a margem para ajustar ao grid */
     transition: transform 0.3s ease; /* Smooth transition for transform */
 }
 
@@ -481,10 +482,11 @@ footer p {
     transform: scale(1.01); 
 }
 
-#filterButton h3{
+#filterButton h3 {
     font-weight: 400;
     transition: transform 0.3s ease;
 }
+
 #filterButton:hover>h3 {
     font-weight: 700;
     transform: scale(1.01); 
@@ -494,12 +496,13 @@ footer p {
     stroke-width: 2px;
 }
 
-#filterDropdown h3{
+#filterDropdown h3 {
     font-weight: 400;
     transition: transform 0.3s ease;
 }
+
 #filterDropdown h3:hover {
-   font-weight: 700;
+    font-weight: 700;
     transform: scale(1.01); 
 }
 
@@ -551,12 +554,12 @@ footer p {
     margin: calc(var(--marginDesktop)/3) 0;
 }
 
-.listElement div{
+.listElement div {
     mix-blend-mode: difference;
     color: var(--white);
 }
 
-#listMode  .gridElement:hover h2{
+#listMode  .gridElement:hover h2 {
     transform: scale(1.02); 
 }
 
@@ -571,6 +574,10 @@ footer p {
 .titleList {
     text-transform: uppercase;
     width: 40%;
+}
+
+.titleList h2 {
+    font-weight: 700;
 }
 
 .categoryList {
@@ -590,17 +597,14 @@ footer p {
     transition: opacity 0.3s ease;
 }
 
-
 .imageList img {
     height: 100%;
 }
 
-
-
-
-#gridMode .gridElement img:hover{
+#gridMode .gridElement img:hover {
     box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
 }
+
 
 
 /*Espetaculo*/
@@ -726,7 +730,7 @@ span {
     text-transform: uppercase;
     color: var(--black) !important;
     font-size: calc(250px + 10vw);
-    line-height: calc(170px + 10vw);
+    line-height: calc(200px + 10vw);
 }
 
 .rollingText {
@@ -747,6 +751,7 @@ span {
     -ms-user-select: none;
     user-select: none;
 }
+
 
 @keyframes rollingText {
     0% {
