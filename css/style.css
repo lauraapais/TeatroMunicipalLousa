@@ -25,7 +25,7 @@ body {
 
 @font-face {
     font-family: TMLdisplay;
-    src: url(data/TMLDisplay-Regular.otf);
+    src: url(../data/TMLDisplay-Regular.otf);
 }
 
 a:hover {
@@ -68,14 +68,9 @@ p {
 
 hr {
     border: none;
-    border-top: 0.5px solid var(--black);
-    transition: transform 0.3s ease;
-    transform: scaleY(1);
+    border-top: 0.5px solid var(--black)
 }
 
-.enterHr:hover hr {
-    transform: scaleY(2); 
-}
 
 footer p {
     color: var(--grey);
@@ -457,6 +452,11 @@ footer p {
     width: calc(100% / 4 - var(--marginDesktop));
     margin-bottom: 3vh;
     margin-right: var(--marginDesktop);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+#gridMode .gridElement:hover {
+    transform: scale(1.01);
 }
 
 .gridElement:nth-of-type(4n) {
@@ -550,9 +550,7 @@ footer p {
     margin: calc(var(--marginDesktop)/3) 0;
 }
 
-
-
-.listElement h2 {
+.listElement{
     mix-blend-mode: difference;
     color: var(--white);
 }
@@ -592,19 +590,12 @@ footer p {
     height: 100%;
 }
 
-.gridElement:hover hr{
-    transform: scaleY(2);
+
+
+#listMode  .gridElement:hover h2{
+    transform: scale(1.05); 
 }
 
-.gridElement:hover h2{
-    font-weight: bold;
-    transform: scale(1.01); 
-}
-
-.gridElement:hover h3{
-    font-weight: bold;
-    transform: scale(1.01); 
-}
 
 #gridMode .gridElement img:hover{
     box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
@@ -836,6 +827,15 @@ span {
 .aboutInfoTitle{
  text-transform: uppercase;
  font-weight: 900;
+}
+
+.moreInfoTitle{
+    text-transform: uppercase;
+    margin: calc(var(--marginDesktop) / 6) 0;
+}
+
+.moreInfoTitle:hover{
+    font-weight: 900;
 }
 
 .aboutTextTitle{
