@@ -720,12 +720,13 @@ button {
 button:hover {
     box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
 }
+
 span {
     font-family: 'TMLdisplay';
     text-transform: uppercase;
     color: var(--black) !important;
-    font-size: calc(500px + 0.390625vw);
-    line-height: calc(490px + 0.390625vw);
+    font-size: calc(300px + 10vw);
+    line-height: calc(200px + 10vw);
 }
 
 .rollingText {
@@ -740,9 +741,10 @@ span {
 .rollingText span {
     display: inline-block;
     animation: rollingText 60s linear infinite;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 4vh;
 }
 
 @keyframes rollingText {
