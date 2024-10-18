@@ -88,6 +88,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 500;
 }
 
 
@@ -739,6 +740,9 @@ span {
 .rollingText span {
     display: inline-block;
     animation: rollingText 60s linear infinite;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 @keyframes rollingText {

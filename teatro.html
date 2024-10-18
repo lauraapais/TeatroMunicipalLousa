@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/mqf0rbc.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="css/locomotive-scroll_old.css">
 </head>
 
 <body id="bodyIndex">
@@ -43,20 +44,20 @@
             </div>
         </header>
 
-        <main class="mainAbout">
-            <div class="aboutLanding">
+        <main class="mainAbout" data-scroll-container>
+            <div class="aboutLanding" data-scroll-section>
                 <div class="rollingText">
                     <span data-text="Teatro Municipal da Lousã">Teatro Municipal da Lousã</span>
                 </div>
 
                 <div class="aboutImages">
-                    <div id="imgAbout1">
+                    <div id="imgAbout1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" >
                         <img src="data/imagens/teatro/DSC_0425_duo.jpg">
                     </div>
-                    <div id="imgAbout2">
+                    <div id="imgAbout2"  data-scroll data-scroll-direction="vertical" data-scroll-speed="2" >
                         <img src="data/imagens/teatro/DSC_0466_duo.jpg">
                     </div>
-                    <div id="imgAbout3">
+                    <div id="imgAbout3"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" data-scroll-position="left">
                         <img src="data/imagens/teatro/DSC_0493_duo.jpg">
                     </div>
                 </div>
@@ -64,7 +65,7 @@
 
             </div>
 
-            <div class="aboutDiv">
+            <div class="aboutDiv" data-scroll-section>
                 <div class="aboutText">
                     <p class="aboutTextTitle">
                         Sobre
@@ -87,7 +88,7 @@
                         programação de excelência, com música, dança, teatro, ciclos de cinema, entre outros.
                     </p>
                 </div>
-                <div class="aboutInfo">
+                <div class="aboutInfo" >
                     <div>
                         <hr>
                         <p class="aboutInfoTitle">Morada</p>
@@ -119,14 +120,14 @@
                     </div>
                 </div>
             </div>
-            <div class="moreInfo hover-link" id="moreInfoButton">
-                <div class="enterHr">
+            <div class="moreInfo hover-link" id="moreInfoButton"  data-scroll-container>
+                <div class="enterHr"data-scroll-section>
                     <hr>
                     <p class="moreInfoTitle">+Informações</p>
                     <hr>
                 </div>
 
-                <div id="moreInfoContent">
+                <div id="moreInfoContent" data-scroll-section>
                     <div class="moreInfoElement">
                         <p class="aboutInfoTitle">Equipa</p>
                         <div class="teamMember">
@@ -181,7 +182,7 @@
                         <p>Informação e reservas através do email bilheteira.tml@cm-lousa.pt, e pelo
                             nº de telemóvel 927 174 785.</p>
                     </div>
-                    <div class="moreInfoElement">
+                    <div class="moreInfoElement"> 
                         <hr>
                         <p class="aboutInfoTitle">
                             Regras de Reserva
@@ -260,7 +261,7 @@
                         <p>As entradas gratuitas são limitadas à lotação do espaço, mediante levantamento
                             prévio de bilhete.</p>
                     </div>
-                    <div class="moreInfoElement">
+                    <div class="moreInfoElement" >
                         <hr>
                         <p class="aboutInfoTitle">
                             Descontos
@@ -281,7 +282,7 @@
                             • Cartão Jovem.
                         </p>
                     </div>
-                    <div class="moreInfoElement">
+                    <div class="moreInfoElement" >
                         <hr>
                         <p class="aboutInfoTitle">
                             Condições de Acesso
@@ -295,8 +296,8 @@
             </div>
         </main>
 
-        <footer>
-            <div class="hover-link">
+        <footer data-scroll-container>
+            <div class="hover-link" data-scroll-section>
                 <a href="https://www.google.com/maps?q=40.1124,-8.2465" target="_blank">
                     <p>Teatro Municipal da Lousã</p>
                     <p>Av. Dr. José Maria Cardoso,</p>
@@ -304,7 +305,7 @@
                     <p>40.1124° N, 8.2465° W</p>
                 </a>
             </div>
-            <div>
+            <div data-scroll-section>
                 <p>
                     Bilheteira</p>
                 <a href="mailto:bilheteira.tml@cm-lousa.pt">
@@ -324,4 +325,9 @@
     <script src="js/interationAbout.js"></script>
     <script src="js/mobileHeight.js"></script>
     <script src="js/cursor.js"></script>
+
+    <script src="js/locomotive-scroll.min_old.js"></script>
+    <script src="js/locomotive-scroll-fix.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
 </body>
