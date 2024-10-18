@@ -725,17 +725,19 @@ span {
     font-family: 'TMLdisplay';
     text-transform: uppercase;
     color: var(--black) !important;
-    font-size: calc(300px + 10vw);
-    line-height: calc(200px + 10vw);
+    font-size: calc(250px + 10vw);
+    line-height: calc(170px + 10vw);
 }
 
 .rollingText {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    position: relative;
     display: flex;
     align-items: flex-end;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
 }
 
 .rollingText span {
@@ -744,7 +746,6 @@ span {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 4vh;
 }
 
 @keyframes rollingText {
