@@ -709,6 +709,8 @@ footer p {
     margin-bottom: calc(var(--marginDesktop) / 2);
     text-transform: uppercase;
 }
+
+
 button {
     background-color: var(--white);
     padding: 10px;
