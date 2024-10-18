@@ -550,9 +550,13 @@ footer p {
     margin: calc(var(--marginDesktop)/3) 0;
 }
 
-.listElement{
+.listElement div{
     mix-blend-mode: difference;
     color: var(--white);
+}
+
+#listMode  .gridElement:hover h2{
+    transform: scale(1.02); 
 }
 
 .infoList {
@@ -592,15 +596,10 @@ footer p {
 
 
 
-#listMode  .gridElement:hover h2{
-    transform: scale(1.05); 
-}
-
 
 #gridMode .gridElement img:hover{
     box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
 }
-
 
 
 /*Espetaculo*/
