@@ -452,9 +452,12 @@ footer p {
 }
 
 #gridMode .gridElement {
-    width: 100%; /* O width será controlado pelo grid */
-    margin: 0; /* Remove a margem para ajustar ao grid */
-    transition: transform 0.3s ease; /* Smooth transition for transform */
+    width: 100%;
+    /* O width será controlado pelo grid */
+    margin: 0;
+    /* Remove a margem para ajustar ao grid */
+    transition: transform 0.3s ease;
+    /* Smooth transition for transform */
 }
 
 #gridMode .gridElement:hover {
@@ -479,7 +482,7 @@ footer p {
 
 .agendaMode h3:hover {
     font-weight: 700;
-    transform: scale(1.01); 
+    transform: scale(1.01);
 }
 
 #filterButton h3 {
@@ -489,7 +492,7 @@ footer p {
 
 #filterButton:hover>h3 {
     font-weight: 700;
-    transform: scale(1.01); 
+    transform: scale(1.01);
 }
 
 #filterButton:hover>svg {
@@ -503,7 +506,7 @@ footer p {
 
 #filterDropdown h3:hover {
     font-weight: 700;
-    transform: scale(1.01); 
+    transform: scale(1.01);
 }
 
 .headerElement {
@@ -542,7 +545,8 @@ footer p {
 #listMode .gridElement {
     width: 100%;
     position: relative;
-    transition: box-shadow 0.3s ease; /* Adiciona a transição suave */
+    transition: box-shadow 0.3s ease;
+    /* Adiciona a transição suave */
 }
 
 .listElement {
@@ -555,14 +559,18 @@ footer p {
 }
 
 .listElement div {
-    mix-blend-mode: difference;
-    color: var(--white);
+    color: var(--black);
 }
 
+.listElement div>* {
+    mix-blend-mode: difference;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-
-#listMode  .gridElement:hover h2 {
-    transform: scale(1.02); 
+#listMode .gridElement:hover h2 {
+    transform: scale(1.02);
 }
 
 .infoList {
@@ -611,36 +619,37 @@ footer p {
 
 /*Espetaculo*/
 .headerShow .logoHeader svg {
-   fill: var(--white);
+    fill: var(--white);
 }
 
-.headerShow  hr{
-    border:none;
-    border-top: 0.5px solid var(--white)!important;
+.headerShow hr {
+    border: none;
+    border-top: 0.5px solid var(--white) !important;
 }
 
-.coverHeader hr{
-    border:none;
-    border-top: 0.5px solid var(--white)!important;
+.coverHeader hr {
+    border: none;
+    border-top: 0.5px solid var(--white) !important;
 }
 
 .headerShow .navHeader h3 {
     color: var(--white) !important;
 }
 
-.navHeader h3{
+.navHeader h3 {
     font-weight: 400;
     transition: transform 0.3s ease;
 }
 
-.navHeader h3:hover{
-   font-weight: 700;
-    transform: scale(1.01); 
+.navHeader h3:hover {
+    font-weight: 700;
+    transform: scale(1.01);
 }
 
-.selected{
+.selected {
     font-weight: 700;
 }
+
 .coverShow {
     position: absolute;
     top: 0;
@@ -722,7 +731,8 @@ button {
     font-weight: 400;
     font-family: "area-normal", sans-serif;
     text-transform: uppercase;
-    transition: box-shadow 0.3s ease; /* Adiciona a transição suave */
+    transition: box-shadow 0.3s ease;
+    /* Adiciona a transição suave */
 }
 
 button:hover {
@@ -782,7 +792,7 @@ span {
     justify-content: center;
 }
 
-.aboutLanding svg{
+.aboutLanding svg {
     height: calc(100vh - 10vh - var(--marginDesktop)* 3);
 }
 
@@ -835,64 +845,66 @@ span {
     text-wrap: pretty;
 }
 
-.aboutInfo p{
+.aboutInfo p {
     margin: calc(var(--marginDesktop)/4) 0;
 }
 
-.aboutInfoTitle{
- text-transform: uppercase;
- font-weight: 900;
+.aboutInfoTitle {
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
-.moreInfoTitle{
+.moreInfoTitle {
     text-transform: uppercase;
     margin: calc(var(--marginDesktop) / 6) 0;
 }
 
-.moreInfoTitle:hover{
+.moreInfoTitle:hover {
     font-weight: 900;
 }
 
-.aboutTextTitle{
+.aboutTextTitle {
     text-transform: uppercase;
     margin-bottom: calc(var(--marginDesktop)/4);
 }
 
-.teamTitle{
+.teamTitle {
     text-transform: uppercase;
     font-weight: bold;
     margin: calc(var(--marginDesktop) / 4) 0;
 }
 
-.subTitleAbout{
+.subTitleAbout {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.aboutInfoTitle{
+.aboutInfoTitle {
     margin: calc(var(--marginDesktop) / 6) 0;
 }
 
-.aboutInfoTitleSub{
+.aboutInfoTitleSub {
     font-weight: bold;
     margin: calc(var(--marginDesktop) / 6) 0;
 }
 
-.teamDiv{
+.teamDiv {
     margin: calc(var(--marginDesktop) / 2) 0;
 }
-.moreInfo{
+
+.moreInfo {
     margin: 0 var(--marginDesktop);
 }
-.teamMember{
+
+.teamMember {
     margin-top: calc(var(--marginDesktop) / 6);
 }
 
-.moreInfoElement{
+.moreInfoElement {
     margin-bottom: calc(var(--marginDesktop) / 6);
 }
 
-#moreInfoContent p{
+#moreInfoContent p {
     width: 50%;
 }
 
@@ -900,7 +912,7 @@ span {
     max-height: 0;
 }
 
-.enterHr{
+.enterHr {
     margin: calc(var(--marginDesktop) / 4) 0;
 }
 
