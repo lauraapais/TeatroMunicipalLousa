@@ -954,6 +954,9 @@ span {
         position: relative;
     }
 
+    .navHeader {
+        width: 30%;}
+
     #logoMainIndex_2 svg {
         position: absolute;
         right: 0;
@@ -1132,7 +1135,7 @@ span {
     .month h1 {
         margin-bottom: calc(var(--marginMobile));
     }
-    
+
     .infoList {
         display: flex;
         justify-content: space-between;
@@ -1180,5 +1183,46 @@ span {
 
     .listElement:nth-child(3) {
         order: 2;
+    }
+
+    /*espetáculo*/
+    h1{
+        font-size: calc(50px + 0.390625vw);
+        font-family: "TMLdisplay";
+        line-height: calc(55px + 0.390625vw);
+    }
+
+    .coverHeader{
+        margin-top: calc(var(--marginMobile)*2);
+    }
+    .coverShowInfo h1 {
+        position: absolute;
+        bottom: calc(var(--marginMobile));
+    }
+
+    .coverShowInfo {
+        min-height: calc(100vh - 10vh - var(--marginMobile)* 2);
+        position: relative;
+    }
+
+    .infoShow{
+        flex-direction: column;
+    }
+
+    .lateralInfo {
+        width: 100%;
+    }
+
+    .lateralInfoInfo {
+        margin: calc(var(--marginDesktop)) 0;
+    }
+
+    button{
+        margin-top: calc(var(--marginMobile)/2);
+    }
+
+    .mainInfo {
+        width: 100%;
+        margin-top: calc(var(--marginMobile));
     }
 }
