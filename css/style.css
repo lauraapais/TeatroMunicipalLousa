@@ -917,10 +917,6 @@ span {
         font-size: calc(10px + 0.390625vw);
     }
 
-    span {
-        font-size: calc(18px + 0.390625vw);
-    }
-
     .hiddenMobile {
         display: none;
     }
@@ -1045,5 +1041,65 @@ span {
 
     #cursor {
         display: none;
+    }
+
+    /*teatro*/
+    span {
+        font-size: calc(300px + 0.390625vw);
+    }
+
+    .aboutDiv {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--marginDesktop));
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        margin: var(--marginDesktop) 0;
+    }
+
+ 
+    /*teatro*/
+    span {
+        font-size: calc(300px + 0.390625vw);
+    }
+
+    .aboutDiv {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--marginDesktop));
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        margin: var(--marginDesktop) 0;
+    }
+
+    #imgAbout3 {
+        width: 50vw;
+        height: 20vh;
+    }
+
+    #imgAbout2 {
+        width: 60vw;
+        height: 20vh;
+        bottom: 45%;
+        right: 10%;
+    }
+
+    #imgAbout1 {
+        width: 60vw;
+        height: 30vh;
+        left: 5%;
+        bottom: 5%;
     }
 }
