@@ -955,6 +955,8 @@ span {
         line-height: calc(12px + 0.390625vw);
     }
 
+  
+
     /*Index*/
     #logoMainIndex_1,
     #logoMainIndex_2 {
@@ -969,13 +971,22 @@ span {
         margin-top: 1vw;
     }
 
-    .agendaIndex {
+    .menuIndexMobile {
         margin: var(--marginDesktop);
         padding: 0;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .menuIndexMobile hr{
+        width: 50%;
+    }
+    .menuIndexMobile p{
+        font-size: calc(18px + 0.390625vw);
+        line-height: calc(23px + 0.390625vw);
+        margin: calc(var(--marginDesktop) / 2);
     }
 
     #logoMainIndex_2 {
@@ -1077,8 +1088,6 @@ span {
 
 
     /*teatro*/
-
-
     .aboutDiv {
         display: flex;
         flex-direction: column;
@@ -1296,6 +1305,10 @@ span {
 
     footer p{
         font-size: calc(10px + 0.390625vw);
+    }
+
+    .footerIndex {
+       position: initial;
     }
 
 }
