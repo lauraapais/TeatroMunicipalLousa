@@ -1131,8 +1131,8 @@ span {
 
     .titleGrid h2 {
         font-weight: 600;
-        font-size: calc(15px + 0.390625vw);
-        line-height: calc(19px + 0.390625vw);
+        font-size: calc(13px + 0.390625vw);
+        line-height: calc(16px + 0.390625vw);
     }
 
     .gridInfo hr {
