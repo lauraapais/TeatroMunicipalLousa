@@ -567,15 +567,20 @@ footer p {
     -webkit-text-fill-color: transparent;
 }
 
-/* Ajuste específico para Safari */
+/* Ajuste para Safari */
 @media not all and (min-resolution: .001dpcm) {
-    @supports (-webkit-appearance:none) {
+    @supports (-webkit-appearance: none) {
         .listElement div>* {
-            -webkit-text-fill-color: var(--black); /* Fallback para Safari */
-            background: none; /* Remove background para evitar o erro no Safari */
+            -webkit-text-fill-color: transparent; /* Mantém o texto invisível */
+            background-image: linear-gradient(to right, white, white); /* Força o preenchimento branco */
+            background-clip: text;
+            -webkit-background-clip: text;
+            mix-blend-mode: normal; /* Remove o difference */
+            transition: none; /* Evita a transição no hover */
         }
     }
 }
+
 
 
 #listMode .gridElement:hover h2 {
