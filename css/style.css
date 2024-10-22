@@ -1129,7 +1129,7 @@ span {
     }
 
     .aboutLanding {
-        height: 100vh;
+        height: calc(100vh - 10vh - var(--marginMobile) / 2);
     }
 
     .moreInfoElement p {
