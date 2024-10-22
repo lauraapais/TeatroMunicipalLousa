@@ -556,40 +556,23 @@ footer p {
 .listElement div {
     margin: calc(var(--marginDesktop)/3) 0;
 }
-
-/* Compatibilidade geral */
 .listElement div {
     color: var(--black);
 }
 
-/* Pseudo-elementos para Safari */
-.listElement div::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.listElement div>* {
+    mix-blend-mode: difference;
     background: white;
-    z-index: -1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Especifico para WebKit browsers (inclui Safari) */
-@supports (-webkit-background-clip: text) {
-    .listElement div>* {
-        background: white;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        mix-blend-mode: normal; /* Remove mix-blend-mode para Safari */
-    }
-}
-
-/* Ajuste de fallback para Safari */
+/* Ajuste específico para Safari */
 @media not all and (min-resolution: .001dpcm) {
     @supports (-webkit-appearance:none) {
         .listElement div>* {
-            -webkit-text-fill-color: var(--black); /* Cor padrão no Safari */
-            background: none; /* Remove background no Safari */
+            -webkit-text-fill-color: var(--black); /* Fallback para Safari */
+            background: none; /* Remove background para evitar o erro no Safari */
         }
     }
 }
