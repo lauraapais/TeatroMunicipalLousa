@@ -874,6 +874,7 @@ span {
 
 .divFlex svg{
     height: calc(9px + 0.390625vw);
+    margin: 0 calc(var(--marginDesktop) / 2);
 }
 
 .moreInfoTitle:hover {
@@ -965,6 +966,10 @@ span {
   
 
     /*Index*/
+    #bodyIndex .navHeader {
+        display: none;
+    }
+
     #logoMainIndex_1,
     #logoMainIndex_2 {
         height: calc(var(--vh, 1h)* 43);
@@ -992,7 +997,7 @@ span {
     }
     .menuIndexMobile p{
         font-size: calc(18px + 0.390625vw);
-        line-height: calc(23px + 0.390625vw);
+        line-height: calc(20px + 0.390625vw);
         margin: calc(var(--marginDesktop) / 2);
     }
 
