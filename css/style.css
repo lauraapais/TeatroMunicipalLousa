@@ -1077,9 +1077,7 @@ span {
 
 
     /*teatro*/
-    span {
-        font-size: calc(300px + 0.390625vw);
-    }
+
 
     .aboutDiv {
         display: flex;
