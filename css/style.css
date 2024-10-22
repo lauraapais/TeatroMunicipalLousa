@@ -452,11 +452,8 @@ footer p {
 
 #gridMode .gridElement {
     width: 100%;
-    /* O width será controlado pelo grid */
     margin: 0;
-    /* Remove a margem para ajustar ao grid */
     transition: transform 0.3s ease;
-    /* Smooth transition for transform */
 }
 
 #gridMode .gridElement:hover {
@@ -545,7 +542,6 @@ footer p {
     width: 100%;
     position: relative;
     transition: box-shadow 0.3s ease;
-    /* Adiciona a transição suave */
 }
 
 .listElement {
@@ -556,32 +552,17 @@ footer p {
 .listElement div {
     margin: calc(var(--marginDesktop)/3) 0;
 }
-.listElement div {
-    color: var(--black);
+
+.gridInfo {
+    color: black !important;
 }
 
-.listElement div>* {
-    mix-blend-mode: difference;
+.listElement:hover  .gridInfo>* {
     background: white;
+    mix-blend-mode: difference;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/* Ajuste para Safari */
-@media not all and (min-resolution: .001dpcm) {
-    @supports (-webkit-appearance: none) {
-        .listElement div>* {
-            -webkit-text-fill-color: transparent; /* Mantém o texto invisível */
-            background-image: linear-gradient(to right, white, white); /* Força o preenchimento branco */
-            background-clip: text;
-            -webkit-background-clip: text;
-            mix-blend-mode: normal; /* Remove o difference */
-            transition: none; /* Evita a transição no hover */
-        }
-    }
-}
-
-
 
 #listMode .gridElement:hover h2 {
     transform: scale(1.02);
@@ -693,7 +674,8 @@ footer p {
 }
 
 .coverShowInfo {
-    min-height: calc(100vh - 10vh - var(--marginDesktop)*2);
+    min-height: calc(100vh - 10vh - var(--marginDesktop)* 2);
+    position: relative;
 }
 
 .coverShowInfo h1 {
