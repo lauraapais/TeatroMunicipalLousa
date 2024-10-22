@@ -471,7 +471,6 @@ footer p {
 }
 
 .agendaMode {
-    width: 10%;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -1132,7 +1131,8 @@ span {
 
     .titleGrid h2 {
         font-weight: 600;
-        font-size: calc(13px + 0.390625vw);
+        font-size: calc(15px + 0.390625vw);
+        line-height: calc(19px + 0.390625vw);
     }
 
     .gridInfo hr {
@@ -1149,6 +1149,7 @@ span {
 
     .month h1 {
         margin-bottom: calc(var(--marginMobile));
+        font-size: calc(60px + 0.390625vw);
     }
 
     .infoList {
@@ -1198,6 +1199,10 @@ span {
 
     .listElement:nth-child(3) {
         order: 2;
+    }
+
+    .agendaMode {
+        gap: 15px;
     }
 
     /*espetáculo*/
