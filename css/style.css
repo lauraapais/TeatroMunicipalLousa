@@ -442,6 +442,16 @@ footer p {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.gridPhoto {
+    overflow: hidden; 
+}
+
+.gridPhoto img:hover {
+    transform: scale(1.05);
+    
 }
 
 #gridMode .monthSep {
@@ -454,10 +464,6 @@ footer p {
     width: 100%;
     margin: 0;
     transition: transform 0.3s ease;
-}
-
-#gridMode .gridElement:hover {
-    transform: scale(1.01);
 }
 
 .gridElement:nth-of-type(4n) {
@@ -478,7 +484,6 @@ footer p {
 
 .agendaMode h3:hover {
     font-weight: 600;
-    transform: scale(1.01);
 }
 
 #filterButton h3 {
@@ -557,7 +562,7 @@ footer p {
     color: black !important;
 }
 
-.listElement:hover .gridInfo>* {
+.listElement .gridInfo>* {
     background: white;
     mix-blend-mode: difference;
     -webkit-background-clip: text;
