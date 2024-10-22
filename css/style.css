@@ -926,6 +926,16 @@ span {
         display: block;
     }
 
+    .main {
+        width: calc(100vw - var(--marginMobile)* 2);
+        padding: 0 var(--marginMobile);
+    }
+
+    header {
+        margin: var(--marginMobile);
+        width: calc(100vw - var(--marginMobile)* 2);
+    }
+
 
     /*Index*/
     #logoMainIndex_1,
@@ -1187,9 +1197,9 @@ span {
 
     /*espetáculo*/
     h1{
-        font-size: calc(50px + 0.390625vw);
+        font-size: calc(45px + 0.390625vw);
         font-family: "TMLdisplay";
-        line-height: calc(55px + 0.390625vw);
+        line-height: calc(50px + 0.390625vw);
     }
 
     .coverHeader{
@@ -1201,7 +1211,7 @@ span {
     }
 
     .coverShowInfo {
-        min-height: calc(100vh - 10vh - var(--marginMobile)* 2);
+        min-height: calc(var(--vh, 1h)*100 - 10vh - var(--marginMobile)* 3);
         position: relative;
     }
 
@@ -1219,10 +1229,37 @@ span {
 
     button{
         margin-top: calc(var(--marginMobile)/2);
+        font-size: calc(9px + 0.390625vw);
     }
 
+    .infoShow{
+        margin-top: var(--marginMobile);
+    }
     .mainInfo {
         width: 100%;
-        margin-top: calc(var(--marginMobile));
+        margin-top: calc(var(--marginMobile)*2);
     }
+
+    .detailsShow{
+        margin-bottom: calc(var(--marginMobile) / 2);
+    }
+
+    .coverHeaderContent {
+        display: flex;
+        margin: calc(var(--marginMobile) / 2) 0;
+        justify-content: space-between;
+    }
+
+    .listElement{
+        margin: calc(var(--marginMobile) / 2) 0;
+    }
+
+    .agendaHeader {
+        margin: calc(var(--marginMobile) / 2) 0;
+    }
+
+    footer p{
+        font-size: calc(10px + 0.390625vw);
+    }
+
 }
