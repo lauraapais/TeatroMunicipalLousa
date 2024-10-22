@@ -940,6 +940,9 @@ span {
         width: calc(100vw - var(--marginMobile)* 2);
     }
 
+    .navHeader h3{
+        margin: calc(var(--marginDesktop) / 2) 0;
+    }
 
     /*Index*/
     #logoMainIndex_1,
@@ -1269,7 +1272,7 @@ span {
     }
 
     .agendaHeader {
-        margin: calc(var(--marginMobile) / 2) 0;
+        margin-bottom: calc(var(--marginMobile));
     }
 
     footer p{
