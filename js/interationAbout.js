@@ -1,16 +1,28 @@
-const moreInfoButton = document.getElementById("moreInfoButton");
-const moreInfoContent = document.getElementById("moreInfoContent");
+const moreInfoButton1 = document.getElementById("moreInfoButton1");
+const moreInfoContent1 = document.getElementById("moreInfoContent1");
 
-moreInfoButton.addEventListener("click", () => {
-    if (moreInfoContent.style.maxHeight) {
-        // Se a altura está definida, vamos fechar a div
-        moreInfoContent.style.maxHeight = null;
+moreInfoButton1.addEventListener("click", () => {
+    if (moreInfoContent1.style.maxHeight) {
+        moreInfoContent1.style.maxHeight = null;
     } else {
-        // Se não está definida, vamos abrir a div para a altura total do conteúdo
-        moreInfoContent.style.maxHeight = moreInfoContent.scrollHeight + "px";
+        moreInfoContent1.style.maxHeight = moreInfoContent1.scrollHeight + "px";
     }
 });
 
-// Configuração inicial para transição suave no CSS
-moreInfoContent.style.transition = "max-height 0.5s ease";
-moreInfoContent.style.overflow = "hidden";
+// 2
+moreInfoContent1.style.transition = "max-height 0.5s ease";
+moreInfoContent1.style.overflow = "hidden";
+
+const moreInfoButton2 = document.getElementById("moreInfoButton2");
+const moreInfoContent2 = document.getElementById("moreInfoContent2");
+
+moreInfoButton2.addEventListener("click", () => {
+    if (moreInfoContent2.style.maxHeight) {
+        moreInfoContent2.style.maxHeight = null;
+    } else {
+        moreInfoContent2.style.maxHeight = moreInfoContent2.scrollHeight + "px";
+    }
+});
+
+moreInfoContent2.style.transition = "max-height 0.5s ease";
+moreInfoContent2.style.overflow = "hidden";
