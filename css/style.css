@@ -1129,7 +1129,7 @@ span {
     }
 
     .aboutLanding {
-        height: max-content;
+        height: calc(var(--vh, 1h)* 100 - (10vh var(--marginMobile)* 6));
     }
 
     .moreInfoElement p {
