@@ -557,7 +557,7 @@ footer p {
     color: black !important;
 }
 
-.listElement:hover  .gridInfo>* {
+.listElement:hover .gridInfo>* {
     background: white;
     mix-blend-mode: difference;
     -webkit-background-clip: text;
@@ -904,7 +904,8 @@ span {
     width: 50%;
 }
 
-#moreInfoContent1, #moreInfoContent2 {
+#moreInfoContent1,
+#moreInfoContent2 {
     max-height: 0;
 }
 
@@ -1043,7 +1044,7 @@ span {
         display: none;
     }
 
- 
+
     /*teatro*/
     span {
         font-size: calc(300px + 0.390625vw);
@@ -1094,5 +1095,90 @@ span {
         height: 30vh;
         left: 5%;
         bottom: 5%;
+    }
+
+     /*agenda*/
+    h3 {
+        font-size: calc(12px + 0.390625vw);
+    }
+
+    h2 {
+        font-size: calc(12px + 0.390625vw);
+    }
+
+    #gridMode .monthSep {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: calc(var(--marginMobile));
+    }
+
+    .titleGrid h2 {
+        font-weight: 600;
+        font-size: calc(13px + 0.390625vw);
+    }
+
+    .gridInfo hr {
+        margin: calc(var(--marginDesktop)) 0;
+    }
+
+    .month {
+        margin-top: calc(var(--marginMobile)* 4);
+    }
+
+    .listElement div {
+        margin: calc(var(--marginDesktop) / 2.5) 0;
+    }
+
+    .month h1 {
+        margin-bottom: calc(var(--marginMobile));
+    }
+    
+    .infoList {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .infoList h2 {
+        width: fit-content;
+    }
+
+    .categoryList {
+        width: fit-content;
+    }
+
+    .imageList{
+        display: none;
+    }
+
+    .titleList {
+        width:100%;
+    }
+
+    .titleList h2 {
+        font-weight: 600;
+        font-size: calc(13px + 0.390625vw);
+    }
+
+    .infoList{
+        gap: var(--marginDesktop);
+    }
+
+    .listElement {
+        flex-direction: column;
+    }
+
+    .infoList h2:last-child{
+        display: none;
+    }
+    .listElement:nth-child(1) {
+        order: 1;
+    }
+
+    .listElement:nth-child(2) {
+        order: 3;
+    }
+
+    .listElement:nth-child(3) {
+        order: 2;
     }
 }
