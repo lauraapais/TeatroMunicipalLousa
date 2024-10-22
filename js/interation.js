@@ -1,15 +1,3 @@
-const filterButton = document.getElementById("filterButton");
-const filterDropdown = document.getElementById("filterDropdown");
-
-filterButton.addEventListener("click", () => {
-    if (filterDropdown.style.display === "block") {
-        filterDropdown.style.display = "none";
-    } else {
-        filterDropdown.style.display = "block";
-    }
-});
-
-
 const list = document.getElementById("list");
 const grid = document.getElementById("grid");
 const listMode = document.getElementById("listMode");
@@ -43,7 +31,6 @@ grid.addEventListener("click", () => {
 });
 
 const gridElements = document.querySelectorAll('.gridElement');
-
 gridElements.forEach((element) => {
     const imageElement = element.querySelector('.imageList');
     
@@ -66,3 +53,24 @@ gridElements.forEach((element) => {
     }
 });
 
+
+const filterButton = document.getElementById("filterButton");
+const filterDropdown = document.getElementById("filterDropdown");
+const arrowUp = document.getElementById("arrowUp");
+const arrowDown = document.getElementById("arrowDown");
+
+filterButton.addEventListener("click", () => {
+    console.log("enter");
+    if (filterDropdown.style.maxHeight) {
+        filterDropdown.style.maxHeight = null;
+        arrowUp.style.display = "none";
+        arrowDown.style.display = "block";
+    } else {
+        filterDropdown.style.maxHeight = filterDropdown.scrollHeight + "px";
+        arrowDown.style.display = "none";
+        arrowUp.style.display = "block";
+    }
+});
+
+filterDropdown.style.transition = "max-height 0.5s ease";
+filterDropdown.style.overflow = "hidden";

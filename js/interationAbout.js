@@ -9,10 +9,11 @@ moreInfoButton1.addEventListener("click", () => {
     }
 });
 
-// 2
 moreInfoContent1.style.transition = "max-height 0.5s ease";
 moreInfoContent1.style.overflow = "hidden";
 
+
+// 2
 const moreInfoButton2 = document.getElementById("moreInfoButton2");
 const moreInfoContent2 = document.getElementById("moreInfoContent2");
 

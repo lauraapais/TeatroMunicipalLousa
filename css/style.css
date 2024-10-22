@@ -371,7 +371,6 @@ footer p {
 }
 
 
-
 /*Agenda*/
 .main {
     width: calc(100vw - var(--marginDesktop)* 2);
@@ -389,9 +388,17 @@ footer p {
     stroke-width: .8px;
 }
 
-#filterDropdown {
-    margin: calc(var(--marginDesktop)/4) 0;
+#arrowUp{
+    width: 10px;
+    fill: none;
+    stroke: #000;
+    stroke-width: .8px;
     display: none;
+}
+
+#filterDropdown{
+    margin: calc(var(--marginDesktop)/4) 0;
+    max-height: 0;
 }
 
 #filterDropdown h3 {
