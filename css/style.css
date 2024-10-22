@@ -941,7 +941,8 @@ span {
     }
 
     .navHeader h3{
-        margin: calc(var(--marginDesktop) / 2) 0;
+        margin: calc(var(--marginDesktop)) 0;
+        line-height: calc(12px + 0.390625vw);
     }
 
     /*Index*/
