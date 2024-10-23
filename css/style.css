@@ -829,7 +829,12 @@ span {
     left: 5%;
     z-index: -1;
 }
-
+.aboutImages,
+.rollingText,
+.mainAbout {
+    width: 100%;
+    overflow: hidden;
+}
 .aboutDiv {
     display: flex;
     margin: var(--marginDesktop);
@@ -845,7 +850,7 @@ span {
 }
 
 .aboutText p {
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(13px + 0.390625vw);
     line-height: calc(22px + 0.390625vw);
     font-weight: 800;
     text-wrap: pretty;
@@ -1102,7 +1107,7 @@ span {
     .aboutDiv {
         display: flex;
         flex-direction: column;
-        gap: calc(var(--marginDesktop));
+        gap: calc(var(--marginMobile)* 2);
     }
 
     .aboutText {
@@ -1110,16 +1115,16 @@ span {
     }
 
     .aboutText p {
-        font-size: calc(13px + 0.390625vw);
-        line-height: calc(22px + 0.390625vw);
+        font-size: calc(14px + 0.390625vw);
+        line-height: calc(20px + 0.390625vw);
     }
 
     .aboutInfo p {
-        margin: calc(var(--marginDesktop) / 2) 0;
+        margin: calc(var(--marginDesktop)) 0;
     }
 
     .aboutInfoTitle {
-        margin: calc(var(--marginDesktop) / 2) 0;
+        margin: calc(var(--marginDesktop)) 0;
     }
 
     .aboutInfo {
@@ -1153,6 +1158,11 @@ span {
     .moreInfoElement p {
         width: 100%;
         text-wrap: pretty;
+    }
+
+
+    .moreInfoElement p:last-child {
+        margin-bottom: calc(var(--marginMobile)/2);
     }
 
     .divFlex svg{
