@@ -572,32 +572,14 @@ footer p {
     transition: box-shadow 0.3s ease;
 }
 
+
+
 .listElement {
     display: grid;
     justify-content: space-between;
     padding: calc(var(--marginDesktop) / 4) 0;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-}
-
-.listElement {
-    mix-blend-mode: difference; 
-    color: white; 
-    background: white; 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-}
-
-
-hr {
-   border: none;
-   border-top: 0.5px solid var(--white);
-   mix-blend-mode: difference;
-}
-
-#listMode .monthSep {
-   background: white;
-   mix-blend-mode: difference;
 }
 
 .listElement div {
@@ -608,7 +590,16 @@ hr {
     color: black !important;
 }
 
+.listElement .gridInfo>* {
+    background: white;
+    mix-blend-mode: difference;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+#listMode .gridElement:hover h2 {
+    transform: scale(1.02);
+}
 
 .infoList {
     display: flex;
