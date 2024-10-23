@@ -463,7 +463,7 @@ footer p {
 }
 
 .gridInfo hr {
-    margin: calc(var(--marginDesktop)/4) 0;
+    margin: calc(var(--marginDesktop)/2) 0;
 }
 
 .gridPhoto {
