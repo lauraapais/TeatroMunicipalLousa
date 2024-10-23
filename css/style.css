@@ -28,7 +28,7 @@ body {
 }
 
 a:hover {
-    cursor: none;
+    cursor: pointer;
 }
 
 footer a {
@@ -139,27 +139,27 @@ header:first-child{
 
 p::selection {
     color: var(--white) !important;
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 h1::selection {
     color: var(--white) !important;
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 h2::selection {
     color: var(--white) !important;
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 h3::selection {
     color: var(--white) !important;
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 a::selection {
     color: var(--white) !important;
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 span {
@@ -585,7 +585,14 @@ footer p {
     transition: box-shadow 0.3s ease;
 }
 
+.buttonArquivo{
+    display: flex;
+    justify-content: center;
+}
 
+.buttonArquivo button{
+    margin: calc(var(--marginDesktop)*3) 0 ;
+}
 
 .listElement {
     display: grid;
@@ -760,20 +767,22 @@ footer p {
 
 button {
     background-color: var(--white);
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: calc(var(--marginDesktop) / 2);
     border: 1px solid black;
     font-size: calc(6px + 0.390625vw);
     font-weight: 400;
     font-family: "area-normal", sans-serif;
     text-transform: uppercase;
-    transition: box-shadow 0.3s ease;
-    /* Adiciona a transição suave */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
+    background-color: var(--black);
+    color: var(--white);
     box-shadow: 2px 4px 8px rgba(112, 112, 112, 0.2);
 }
+
 
 span {
     font-family: 'TMLdisplay';
@@ -800,6 +809,7 @@ span {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-right: calc(var(--marginDesktop)* 5);
 }
 
 @keyframes rollingText {
@@ -978,6 +988,13 @@ display: none;
 
 .enterHr {
     margin: calc(var(--marginDesktop) / 4) 0;
+}
+
+/*Arquivo*/
+.archiveContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: calc(var(--marginDesktop)/2);
 }
 
 @media (orientation: portrait) {
