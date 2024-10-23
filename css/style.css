@@ -82,8 +82,8 @@ header {
     border: 1px solid var(--black);
     background-color: var(--white);
     position: sticky;
-    top: 0; /* Isso faz com que o header fique fixo no topo ao rolar a página */
-    z-index: 1000; /* Valor alto para garantir que o header esteja acima de outros elementos */
+    top: 0;
+    z-index: 1000;
 }
 
 
@@ -210,7 +210,7 @@ span {
 
 #logoMainIndex_1,
 #logoMainIndex_2 {
-    height: 55.7vh;
+    height: 55.5vh;
 }
 
 #logoMainIndex_1 svg,
@@ -580,6 +580,26 @@ footer p {
     align-items: center;
 }
 
+.listElement {
+    mix-blend-mode: difference; 
+    color: white; 
+    background: white; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+
+hr {
+   border: none;
+   border-top: 0.5px solid var(--white);
+   mix-blend-mode: difference;
+}
+
+#listMode .monthSep {
+   background: white;
+   mix-blend-mode: difference;
+}
+
 .listElement div {
     margin: calc(var(--marginDesktop)/3) 0;
 }
@@ -588,16 +608,7 @@ footer p {
     color: black !important;
 }
 
-.listElement .gridInfo>* {
-    background: white;
-    mix-blend-mode: difference;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-#listMode .gridElement:hover h2 {
-    transform: scale(1.02);
-}
 
 .infoList {
     display: flex;
@@ -673,9 +684,6 @@ footer p {
 }
 
 .coverShow {
-    position: absolute;
-    top: 0;
-    left: 0;
     margin: 0;
     padding: 0;
     z-index: -1;
