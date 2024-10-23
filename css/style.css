@@ -6,7 +6,7 @@
 
     --headerHeight: calc(var(--vh, 1h)*10);
 
-    --marginDesktop: 2vw;
+    --marginDesktop: 1vw;
     --marginMobile: 4vw;
 }
 
@@ -70,38 +70,58 @@ hr {
     border-top: 0.5px solid var(--black)
 }
 
-
 footer p {
     color: var(--grey);
 }
 
-.headerIndex {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 header {
-    margin: var(--marginDesktop);
-    width: calc(100vw - var(--marginDesktop)* 2);
-    display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    z-index: 500;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    position: sticky;
+    top: 0; /* Isso faz com que o header fique fixo no topo ao rolar a página */
+    z-index: 1000; /* Valor alto para garantir que o header esteja acima de outros elementos */
 }
 
+
+header > * {
+    border-left: 1px solid var(--black); 
+    padding: 0 var(--marginDesktop);
+}
+
+header:first-child{
+    border-left: none;
+}
 
 .navHeader {
-    width: 10%;
     display: flex;
-    gap: 3px;
     flex-direction: column;
     z-index: 500;
+    height: 100%;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.navHeader:hover {
+    background-color: var(--black);
+}
+
+.navHeader:hover h3 {
+    color: var(--white);
+}
+
+.navHeader h3 {
+    transition: color 0.3s ease; 
+}
+
 
 .navHeader h3 {
     margin: calc(var(--marginDesktop) / 8) 0;
     text-transform: uppercase;
+    font-size: calc(12px + 0.390625vw);
 }
 
 .navHeader a {
@@ -156,15 +176,15 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(var(--vh, 1h)*100);
+    height: calc(var(--vh, 1h)* 100 - 9vh);
     width: 100vw;
+    margin-top: calc(var(--marginDesktop));
 }
 
-
-
-
 .logoHeader {
-    height: 10vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
 }
 
 #menuHeader {
@@ -174,7 +194,7 @@ span {
 }
 
 .logoHeader svg {
-    height: 100%;
+    height: 80%;
 }
 
 .agendaHeader {
@@ -183,7 +203,6 @@ span {
     text-transform: uppercase;
     margin: 1vw 0;
 }
-
 
 #bodyIndex {
     overflow-x: hidden;
@@ -212,7 +231,6 @@ span {
 .agendaIndex {
     margin: calc(var(--marginDesktop));
 }
-
 
 #imagesIndex {
     position: absolute;
@@ -330,7 +348,6 @@ footer p {
     right: 0;
 }
 
-
 #cursor {
     position: fixed;
     background-color: #D7D6D4;
@@ -424,7 +441,7 @@ footer p {
 }
 
 .month h1 {
-    margin-bottom: calc(var(--marginDesktop)/4);
+    margin-bottom: var(--marginDesktop);
 }
 
 .titleGrid h2 {
@@ -556,8 +573,11 @@ footer p {
 }
 
 .listElement {
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    padding: calc(var(--marginDesktop) / 4) 0;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
 .listElement div {
@@ -589,7 +609,6 @@ footer p {
 
 .titleList {
     text-transform: uppercase;
-    width: 40%;
 }
 
 .titleList h2 {
@@ -647,10 +666,7 @@ footer p {
     transition: transform 0.3s ease;
 }
 
-.navHeader h3:hover {
-    font-weight: 600;
-    transform: scale(1.01);
-}
+
 
 .selected {
     font-weight: 600!important;
@@ -902,12 +918,12 @@ span {
 }
 
 .aboutInfoTitle {
-    margin: calc(var(--marginDesktop) / 6) 0;
+    margin: calc(var(--marginDesktop) / 2) 0;
 }
 
 .aboutInfoTitleSub {
     font-weight: 600;
-    margin: calc(var(--marginDesktop) / 6) 0;
+    margin: calc(var(--marginDesktop) / 2) 0 0;
 }
 
 .teamDiv {
@@ -923,7 +939,7 @@ span {
 }
 
 .moreInfoElement {
-    margin-bottom: calc(var(--marginDesktop) / 6);
+    margin-bottom: calc(var(--marginDesktop) / 4);
 }
 
 .moreInfoElement p {
@@ -933,6 +949,11 @@ span {
 #moreInfoContent1,
 #moreInfoContent2 {
     max-height: 0;
+}
+
+#moreInfoContent1 .moreInfoElement:last-child , 
+#moreInfoContent2  .moreInfoElement:last-child{
+    margin-bottom: var(--marginDesktop);
 }
 
 .enterHr {
