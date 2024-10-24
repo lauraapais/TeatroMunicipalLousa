@@ -22,8 +22,7 @@ body {
     font-style: normal;
     cursor:none;
 }
-
-main{
+.mainAgenda{
     padding-bottom: calc(var(--marginDesktop)* 4)!important;
 }
 
