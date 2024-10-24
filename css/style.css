@@ -39,6 +39,7 @@ footer a {
 footer{
     background-color: var(--white);
     z-index: -500;
+    padding: calc(var(--marginDesktop)*4) var(--marginDesktop) var(--marginDesktop) var(--marginDesktop)!important;
 }
 
 a {
@@ -631,6 +632,7 @@ footer p {
 
 .titleList {
     text-transform: uppercase;
+    width: 90%;
 }
 
 .titleList h2 {
@@ -1081,6 +1083,7 @@ display: none;
         display: flex;
         gap: var(--marginMobile);
         padding: var(--marginMobile);
+        
     }
 
     #mainIndexContent {
