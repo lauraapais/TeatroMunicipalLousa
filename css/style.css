@@ -619,6 +619,13 @@ footer p {
     margin: calc(var(--marginDesktop)/3) 0;
 }
 
+.listElement{
+    color: var(--grey)
+}
+
+.listElement:hover{
+    color: black !important;
+}
 .gridInfo {
     color: black !important;
 }
