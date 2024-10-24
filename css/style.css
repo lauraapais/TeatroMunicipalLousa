@@ -1004,6 +1004,15 @@ display: none;
     grid-gap: calc(var(--marginDesktop)/2);
 }
 
+@media (orientation: landscape) and (max-width: 1300px) {
+    #gridMode .monthSep {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
 @media (orientation: portrait) {
 
     span {
@@ -1373,7 +1382,7 @@ display: none;
         font-size: calc(30px + 0.390625vw);
         line-height: calc(35px + 0.390625vw);
     }
-    
+
     .coverShowInfoTitle {
         width: 100%;
  
@@ -1423,7 +1432,7 @@ display: none;
     }
 
     .agendaHeader {
-        margin-bottom: calc(var(--marginMobile)* 2);
+        margin-bottom: calc(var(--marginMobile)* 8);
     }
 
     footer p{
@@ -1434,4 +1443,11 @@ display: none;
        position: initial;
     }
 
+}
+
+@media (orientation: portrait) and (min-width: 700px) {
+    #gridMode .monthSep {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
