@@ -1005,11 +1005,21 @@ display: none;
 }
 
 @media (orientation: portrait) {
+
+    span {
+        font-family: 'TMLdisplay';
+        text-transform: uppercase;
+        color: var(--black) !important;
+        font-size: calc(250px + 10vw);
+        line-height: calc(250px + 10vw);
+    }
+    
     .noDisplayMobile{
         display: none;
     }
     p {
         font-size: calc(13px + 0.390625vw);
+        line-height: calc(18px + 0.390625vw);
     }
 
     .hiddenMobile {
@@ -1190,16 +1200,16 @@ display: none;
     }
 
     .aboutInfo p {
-        margin: calc(var(--marginDesktop)) 0;
+        margin: calc(var(--marginMobile)) 0;
     }
 
     .aboutInfoTitle {
-        margin: calc(var(--marginDesktop)) 0;
+        margin: calc(var(--marginMobile)) 0;
     }
 
     .aboutInfo {
         width: 100%;
-        margin: var(--marginDesktop) 0;
+        margin: var(--marginMobile) 0;
     }
 
     #imgAbout3 {
@@ -1236,7 +1246,7 @@ display: none;
     }
 
     .divFlex svg{
-        height: (12px + 0.390625vw);
+        height: (13px + 0.390625vw);
     }
 
      /*agenda*/
@@ -1257,16 +1267,16 @@ display: none;
 
     .titleGrid h2 {
         font-weight: 600;
-        font-size: calc(13px + 0.390625vw);
-        line-height: calc(16px + 0.390625vw);
+        font-size: calc(15px + 0.390625vw);
+        line-height: calc(19px + 0.390625vw);
     }
 
     .gridInfo hr {
-        margin: calc(var(--marginDesktop)) 0;
+        margin: calc(var(--marginMobile)) 0;
     }
 
     .month {
-        margin-top: calc(var(--marginMobile)* 4);
+        margin-top: calc(var(--marginMobile)* 6);
     }
 
     .listElement div {
@@ -1274,7 +1284,7 @@ display: none;
     }
 
     .month h1 {
-        margin-bottom: calc(var(--marginMobile));
+        margin-bottom: calc(var(--marginMobile)*2);
         font-size: calc(60px + 0.390625vw);
         line-height: calc(50px + 0.390625vw);
     }
@@ -1298,6 +1308,8 @@ display: none;
 
     .titleList {
         width:100%;
+        display: block; /* Tornar visível se necessário */
+    grid-column: span 2;
     }
 
     .titleList h2 {
@@ -1311,6 +1323,16 @@ display: none;
 
     .listElement {
         flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+        margin: calc(var(--marginMobile)) 0;
+    }
+
+    .localList{
+        display: none;
+    }
+
+    .categoryList{
+        display: none;
     }
 
     .infoList h2:last-child{
@@ -1339,17 +1361,19 @@ display: none;
         line-height: calc(40px + 0.390625vw);
     }
 
-    .coverHeader{
-        margin-top: calc(var(--marginMobile)*2);
+    .coverShow {
+        height: calc(var(--vh, 1h)* 60);
+        width: calc(100vw - var(--marginMobile)* 2);
     }
-    .coverShowInfo h1 {
-        position: absolute;
-        bottom: calc(var(--marginMobile));
+    .coverShowInfo{
+        margin: calc(var(--marginMobile)*2) 0;
+    }
+    .coverShowInfoTitle {
+        width: 100%;
     }
 
-    .coverShowInfo {
-        min-height: calc(var(--vh, 1h)*100 - 10vh - var(--marginMobile)* 3);
-        position: relative;
+    .coverHeader{
+        margin-top: calc(var(--marginMobile)*2);
     }
 
     .infoShow{
@@ -1361,12 +1385,16 @@ display: none;
     }
 
     .lateralInfoInfo {
-        margin: calc(var(--marginDesktop)) 0;
+        margin: calc(var(--marginMobile)* 2) 0
     }
 
-    button{
-        margin-top: calc(var(--marginMobile)/2);
-        font-size: calc(9px + 0.390625vw);
+    .lateralInfoInfo p {
+        margin-bottom: var(--marginMobile);
+    }
+
+    button {
+        margin-top: calc(var(--marginMobile) / 2);
+        font-size: calc(11px + 0.390625vw);
     }
 
     .infoShow{
@@ -1378,17 +1406,13 @@ display: none;
     }
 
     .detailsShow{
-        margin-bottom: calc(var(--marginMobile) / 2);
+        margin-bottom: calc(var(--marginMobile));
     }
 
     .coverHeaderContent {
         display: flex;
         margin: calc(var(--marginMobile) / 2) 0;
         justify-content: space-between;
-    }
-
-    .listElement{
-        margin: calc(var(--marginMobile) / 2) 0;
     }
 
     .agendaHeader {
