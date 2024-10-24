@@ -375,9 +375,10 @@ footer p {
 
 #cursor {
     position: fixed;
-    background-color: #D7D6D4;
-    width: 2em;
-    height: 2em;
+    background-color: var(--black);
+    opacity: 0.5;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 100%;
     mix-blend-mode: multiply;
     pointer-events: none;
@@ -387,8 +388,8 @@ footer p {
 }
 
 #cursor.active {
-    width: 6em;
-    height: 6em;
+    width: 4em;
+    height: 4em;
 }
 
 .link-container {
