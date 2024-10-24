@@ -7,7 +7,7 @@
     --headerHeight: calc(var(--vh, 1h)*10);
 
     --marginDesktop: 1vw;
-    --marginMobile: 4vw;
+    --marginMobile: 2vw;
 }
 
 /*Geral*/
@@ -190,7 +190,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(var(--vh, 1h)* 100 - 9vh);
+    min-height: calc(var(--vh, 1h)* 100 - 8vh - calc(var(--marginDesktop)* 4));
     width: 100vw;
     margin-top: calc(var(--marginDesktop));
 }
@@ -1005,6 +1005,9 @@ display: none;
 }
 
 @media (orientation: portrait) {
+    .noDisplayMobile{
+        display: none;
+    }
     p {
         font-size: calc(13px + 0.390625vw);
     }
@@ -1023,8 +1026,12 @@ display: none;
     }
 
     header {
-        margin: var(--marginMobile);
-        width: calc(100vw - var(--marginMobile)* 2);
+        width: 100vw;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navHeader{
+        align-items: center;
     }
 
     .navHeader h3{
@@ -1035,10 +1042,9 @@ display: none;
   
 
     /*Index*/
-    #bodyIndex .navHeader {
-        display: none;
+    .logoHeader{
+        padding: 0 var(--marginMobile);
     }
-
     #logoMainIndex_1,
     #logoMainIndex_2 {
         height: calc(var(--vh, 1h)* 43);
@@ -1074,9 +1080,6 @@ display: none;
         position: relative;
     }
 
-    .navHeader {
-        width: 30%;}
-
     #logoMainIndex_2 svg {
         position: absolute;
         right: 0;
@@ -1093,7 +1096,7 @@ display: none;
 
     #mainIndexContent {
         height: auto;
-        min-height: calc(var(--vh, 1h)*100);
+        min-height: calc(var(--vh, 1h)*100 - 10vh);
     }
 
     .imageIndexVertical {
