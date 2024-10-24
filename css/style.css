@@ -90,7 +90,8 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    border: 0.5px solid var(--black);
+    border-top: 0.5px solid var(--black);
+    border-bottom: 0.5px solid var(--black);
     background-color: var(--white);
     position: sticky;
     top: 0;
@@ -103,8 +104,10 @@ header > * {
     padding: 0 var(--marginDesktop);
 }
 
-header:first-child{
-    border-left: none;
+
+header > *:nth-child(1),
+header > *:nth-child(2) {
+    border-left: none!important;
 }
 
 .navHeader {
@@ -627,9 +630,10 @@ footer p {
     display: flex;
 }
 
-.infoList h2 {
-    width: 8vw;
-}
+
+    .infoList h2 {
+        width: 90%
+    }
 
 .titleList {
     text-transform: uppercase;
@@ -1300,11 +1304,11 @@ display: none;
 
     .infoList {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     .infoList h2 {
-        width: fit-content;
+        width: 90%
     }
 
     .categoryList {
