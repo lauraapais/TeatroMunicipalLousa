@@ -1021,8 +1021,7 @@ display: none;
     }
 }
 
-
-
+/*Modo Mobile*/
 @media (orientation: portrait) {
 
     span {
@@ -1067,8 +1066,6 @@ display: none;
         margin: calc(var(--marginDesktop)/1.5) 0;
         line-height: calc(12px + 0.390625vw);
     }
-
-  
 
     /*Index*/
     .logoHeader{
