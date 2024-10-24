@@ -23,6 +23,10 @@ body {
     cursor:none;
 }
 
+main{
+    padding-bottom: calc(var(--marginDesktop)* 4)!important;
+}
+
 @font-face {
     font-family: TMLdisplay;
     src: url(../data/TMLDisplay-Regular.otf);
@@ -39,7 +43,7 @@ footer a {
 
 footer{
     background-color: var(--white);
-    padding: calc(var(--marginDesktop)*4) var(--marginDesktop) var(--marginDesktop) var(--marginDesktop)!important;
+    padding: var(--marginDesktop)!important;
     z-index: -1;
 }
 
@@ -418,7 +422,7 @@ footer p {
 }
 
 .agenda {
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
 
 #arrowDown {
