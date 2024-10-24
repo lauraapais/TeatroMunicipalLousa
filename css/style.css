@@ -1128,6 +1128,7 @@ display: none;
     .imageIndexHorizontal {
         height: calc(80px + 5vw);
     }
+    
 
     #imageIndex1 {
         left: 40%;
@@ -1195,6 +1196,10 @@ display: none;
 
 
     /*teatro*/
+    #imgAbout2 {
+        z-index: -1;
+    }
+
     .aboutDiv {
         display: flex;
         flex-direction: column;
