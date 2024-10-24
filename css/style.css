@@ -1364,7 +1364,10 @@ display: none;
         flex-direction: column;
         grid-template-columns: repeat(3, 1fr);
         margin: calc(var(--marginMobile)) 0;
+        color: black !important;
     }
+
+
 
     .localList{
         display: none;
