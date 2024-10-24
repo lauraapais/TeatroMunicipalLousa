@@ -727,7 +727,7 @@ footer p {
 }
 
 .coverShowInfo{
-    margin: calc(var(--marginDesktop)) 0;
+    margin: calc(var(--marginDesktop)*2) 0;
 }
 
 .coverShowInfo h1 {
@@ -750,7 +750,11 @@ footer p {
 }
 
 .lateralInfoInfo {
-    margin: calc(var(--marginDesktop) / 2) 0;
+    margin: calc(var(--marginDesktop)) 0;
+}
+
+.lateralInfoInfo p{
+    margin-bottom: var(--marginDesktop);
 }
 
 .mainInfo {
@@ -760,7 +764,7 @@ footer p {
 .infoShow {
     display: flex;
     gap: 10%;
-    margin-top: var(--marginDesktop);
+    margin-top: calc(var(--marginDesktop)*2);
 }
 
 .detailsShow {
