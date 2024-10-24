@@ -1129,7 +1129,7 @@ display: none;
 
     #mainIndexContent {
         height: auto;
-        min-height: calc(var(--vh, 1h)*100 - 9.5vh);
+        min-height: calc(var(--vh, 1h)*100 - 10vh);
         margin-top: calc(var(--marginMobile)* 2);
         position: relative;
     }
