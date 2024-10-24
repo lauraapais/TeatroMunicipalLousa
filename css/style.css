@@ -620,7 +620,9 @@ footer p {
 }
 
 .listElement{
-    color: var(--grey)
+    color: var(--grey);
+    transition: color 0.3s ease;
+
 }
 
 .listElement:hover{
